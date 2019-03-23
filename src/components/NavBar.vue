@@ -12,8 +12,10 @@
 		</div>
 		<nav class="nav">
 			<ul>
-            <li><a  href="index.html">    Home</a>
-     <li><a  href="portfolio.html">    Portfolio</a>
+     <li>
+       <router-link to="/">Home</router-link>   
+     <li>
+     <router-link to="/portfolio">Portfolio</router-link>
   </li>
  
   <li> <a  href="about.html">About</a></li>

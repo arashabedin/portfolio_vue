@@ -1,7 +1,10 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
 <template>
   <div id="app">
     <NavBar/>
-    <IntroPage msg="Welcome to Your Vue.js App"/>
+       <router-view></router-view> 
     <Footer/>
   </div>
 </template>
