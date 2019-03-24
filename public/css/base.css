@@ -88,7 +88,8 @@ color:black;
         color:white;
         background-blend-mode: multiply;
         background-color: rgba(0,0,0,0.2);
-           display: block;
+		display: block;
+		cursor: pointer;
     }
     #aboutme-button:hover  #eye-portfolio{
       width:200px!important;
@@ -1148,9 +1149,17 @@ nav ul li button:hover, nav ul li button:active, nav ul li button:focus, nav ul 
 }
 
 .project {
-	margin-bottom: 40px;
-	position: relative;
-	overflow: hidden;
+    margin-bottom: 40px;
+    position: relative;
+    width: 440px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px;
+	vertical-align: top;
+	height: 274px;
+}
+.project_expanded{
+	height: auto;
 }
 
 .projectThumbnail {
@@ -1167,25 +1176,33 @@ nav ul li button:hover, nav ul li button:active, nav ul li button:focus, nav ul 
 	background-color: rgba(0, 0, 0, 0.8);
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 274px;
 	display: none;
 	z-index: 10;
 }
 
 .projectThumbnailHover h4 {
 	font-family: Georgia, Arial, sans-serif;
-	font-weight: normal;
+    font-weight: normal;
     font-style: normal;
-	font-size: 24px;
-	line-height: 1.2;
-	letter-spacing: -0.05em;
-	text-rendering: auto;
-	color: #fff;
-	position: absolute;
-	margin-top: 40px;
-	display: none;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+    text-rendering: auto;
+    color: #fff;
+    position: relative;
+    margin-top: 40px;
+    left: 22px;
+    top: 144px;
 }
-
+.project_field_span{
+display: block;
+color: white;
+position: relative;
+top: 150px;
+left: 22px;
+font-size:14px;
+}
 .projectThumbnailHover h5 {
 	font-family: Arial, sans-serif;
 	font-weight: bold;

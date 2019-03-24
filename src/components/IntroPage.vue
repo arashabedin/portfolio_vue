@@ -40,7 +40,7 @@ z-index: 1000;">
 
     
             
-<a href="about.html" style="text-decoration:none;cursor:pointer"><div id="aboutme-button"><div id="aboutme-front" style="background-image:none;"><span id="visitmyworks" style="margin:auto;display:block;text-align:center; position:relative; top:140px; line-height:70px;margin-bottom:-70px; background-image:url('read-about-me.png'); width:95%; background-repeat:no-repeat;background-size:100% auto;max-width:600px;height:80px;"> </span>
+<div v-on:click="goToAbout" id="aboutme-button"><div id="aboutme-front" style="background-image:none;"><span id="visitmyworks" style="margin:auto;display:block;text-align:center; position:relative; top:140px; line-height:70px;margin-bottom:-70px; background-image:url('read-about-me.png'); width:95%; background-repeat:no-repeat;background-size:100% auto;max-width:600px;height:80px;"> </span>
     <div id="eye-portfolio" style="clear: both;
 width: 200px;
 background-size:cover;
@@ -55,7 +55,7 @@ z-index: 1000;">
 </div>
     </div>
     
-    </a>    
+      
     </div>
 </template>
 
@@ -68,6 +68,9 @@ export default {
   methods: {
     goToPortfolio () {
         this.$router.push('/portfolio')
+    },
+     goToAbout () {
+        this.$router.push('/about')
     }
   }
 }

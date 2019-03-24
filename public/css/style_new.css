@@ -22,7 +22,10 @@
 #contact_form{
     margin-left: 80px;
 }
-
+.project_hovered{
+  background-color: rgba(0, 0, 0, 0.6)!important;
+  display: block!important;
+}
 
 @media only screen and (max-width: 970px) {
     .left_side{
