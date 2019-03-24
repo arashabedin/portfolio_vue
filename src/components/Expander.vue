@@ -74,12 +74,14 @@ export default {
   display: none;
 }
 .expander .expander-toggle + .expander-label {
-  cursor: pointer;
-  display: block;
-  font-weight: bold;
-  line-height: 21px;
-  margin-bottom: 5px;
-  padding: 20px 20px 14px;
+    background-color: black;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    line-height: 21px;
+    margin-bottom: 5px;
+    padding: 20px 20px 14px;
+    color: white;
 }
 .expander .expander-toggle + .expander-label + .expander-content {
   max-height: 0;
@@ -93,20 +95,21 @@ export default {
   margin: 0 20px 20px;
 }
 .expander .expander-toggle + .expander-label:after {
-  background-color: #4f5150;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  color: #ffffff;
-  content: "+";
-  display: block;
-  float: right;
-  font-weight: bold;
-  height: 20px;
-  line-height: 20px;
-  margin-left: 5px;
-  text-align: center;
-  width: 20px;
+ background-color: #5d5f5e;
+    border-radius: 14px;
+    color: #ffffff;
+    content: "+";
+    display: block;
+    float: right;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 5px;
+    text-align: center;
+    width: 24px;
+    position: relative;
+    bottom: 4px;
+    font-size: 18px;
 }
 .expander .expander-toggle:checked + .expander-label + .expander-content {
   max-height: 1200px;
