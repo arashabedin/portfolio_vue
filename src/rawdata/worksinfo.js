@@ -74,6 +74,55 @@ var data = [
         {type:"image",src:"/projects/converse/images/project_01_large_a.jpg"},
 ]
 },
+{
+    name:"graphic1",
+    data:[
+        
+        {type:"image",src:"/projects/icons/images/project_a.jpg"},
+        {type:"image",src:"/projects/icons/images/project_b.jpg"},
+
+]
+},
+{
+    name:"graphic5",
+    data:[
+        
+        {type:"image",src:"/projects/openwiregraphic/images/poster2.jpg", size:"medium"},
+
+]
+},
+{
+    name:"graphic6",
+    data:[
+        
+        {type:"image",src:"/projects/openwire/images/project_01_large_a.jpg",size:"xmedium"},
+        {type:"image",src:"/projects/openwire/images/project_01_large_a.jpg",size:"xmedium"},
+        {type:"image",src:"/projects/openwire/images/prototype.jpg",size:"xmedium"},
+
+
+]
+},
+{
+    name:"graphic7",
+    data:[
+        
+        {type:"image",src:"/projects/domeofvisions/images/project_01_large_a.jpg"},
+ 
+
+]
+},
+{
+    name:"graphic8",
+    data:[
+        
+        {type:"image",src:"/projects/nordic/images/project_01_large_a.png",size:"medium"},
+        {type:"image",src:"/projects/nordic/images/project_01_large_b.png",size:"medium"},
+
+ 
+
+]
+},
+
 
 ];
 export default data;

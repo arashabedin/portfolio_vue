@@ -216,7 +216,7 @@ var graphics = [
   },
   {
     name: "graphic3",
-    title: "Hot Spring Enthusiasts",
+    title: "VIPP",
     field: ["UX/UI Design"],
     role: ["UX/UI Design"],
     date: "2015",

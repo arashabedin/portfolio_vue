@@ -1,17 +1,19 @@
 <template>
-  <div   v-if="data" class="container">
+  <div v-if="data" class="container">
+    <div v-for="item in data.data" :key="item.id">
+      <span v-if="item.type==='image'">
+        <img
+          v-bind:class="{centered:true, medium:item.size==='medium' , xmedium:item.size==='xmedium'}"
+          v-bind:src="item.src"
+          alt="Project 01"
+        >
+      </span>
+      <p>
+        <strong></strong>
+      </p>
 
-		
-		<div  v-for="item in data.data" :key="item.id">
-			<span  v-if="item.type==='image'">
-		    <img class="centered" v-bind:src="item.src" alt="Project 01" />
-            </span>
-			<p><strong></strong></p>
-
-			<hr/>
-            </div>
-
-
+      <hr>
+    </div>
   </div>
 </template>
 
@@ -19,9 +21,9 @@
 import allData from "../rawdata/worksinfo.js";
 export default {
   name: "NavBar",
-    data() {
+  data() {
     return {
-        data:null
+      data: null
     };
   },
   props: {},
@@ -35,8 +37,21 @@ export default {
 };
 </script>
 <style>
-.centered{
-    margin:auto;
-    display: block;
+.centered {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+.medium {
+  width: 60%;
+}
+.xmedium {
+  width: 80%;
+}
+
+@media only screen and (max-width: 760px) {
+ .xmedium, .medium {
+    width: 80%;
+  }
 }
 </style>
