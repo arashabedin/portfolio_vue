@@ -1,14 +1,15 @@
 
 <template>
   <div>
-    <div class="expander" v-if="identifier==='work'">
+
+
+    <div class="expander" v-if="type==='work'">
       <input v-bind:id="identifier" class="expander-toggle" type="checkbox">
       <label v-bind:for="identifier" class="expander-label">{{ title }}</label>
       <div class="expander-content">
         <div class="work-experience">
           <div v-for="item in body" :key="item.id">
             <hr>
-
             <h3>{{item.type}}</h3>
             <h3 style="float:right">{{item.date}}</h3>
             <h4 v-if="item.company">{{item.company}}</h4>
@@ -21,14 +22,32 @@
 
             <h5>Roles:</h5>
             <h5 v-for="y in item.roles" :key="y.id">- {{y}}</h5>
-
-            <hr>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="expander" v-if="identifier==='skills'">
+
+
+      <div class="expander" v-if="type==='typicalSkills'">
+      <input v-bind:id="identifier" class="expander-toggle" type="checkbox">
+      <label v-bind:for="identifier" class="expander-label">{{ title }}</label>
+      <div class="expander-content">
+        <div class="work-experience">
+          <div v-for="item in body" :key="item.id">
+            <hr>
+            <h4>{{item.title}}</h4>
+            <p v-for="x in item.topics" :key="x.id">
+             - {{x}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="expander" v-if="type==='otherSkills'">
       <input v-bind:id="identifier" class="expander-toggle" type="checkbox">
       <label v-bind:for="identifier" class="expander-label">{{ title }}</label>
       <div class="expander-content">
@@ -43,7 +62,7 @@
 export default {
   el: "#faqq",
   name: "Expander",
-  props: ["identifier", "title", "body"]
+  props: ["identifier", "type","title", "body"]
 };
 </script>
 <style>

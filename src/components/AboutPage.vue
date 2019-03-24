@@ -45,11 +45,36 @@
         <h2>Resumé</h2>
         <p>click on the title to expand the description</p>
         <div id="faqq">
-          <expander identifier="work" title="Work Experience" v-bind:body="works"></expander>
+          <expander identifier="work" type="work" title="Work Experience" v-bind:body="works"></expander>
           <expander
-            identifier="skills"
+            identifier="theoriticalSkills"
+            type="otherSkills"
             title="Technical and academic knowledge"
-            v-bind:body="skills"
+            v-bind:body="theoriticalSkills"
+          ></expander>
+          <expander
+            identifier="softwareSkills"
+            type="typicalSkills"
+            title="Software Skills"
+            v-bind:body="softwareSkills"
+          ></expander>
+          <expander
+            identifier="programmingSkills"
+            type="typicalSkills"
+            title="Programming Skills"
+            v-bind:body="programmingSkills"
+          ></expander>
+               <expander
+            identifier="languageSkills"
+            type="otherSkills"
+            title="Language Skills"
+            v-bind:body="languageSkills"
+          ></expander>
+                <expander
+            identifier="certificates"
+            type="otherSkills"
+            title="Certificates"
+            v-bind:body="certificates"
           ></expander>
         </div>
       </div>
@@ -59,7 +84,7 @@
 
 <script>
 import expander from "./Expander.vue";
-var skills = [
+var theoriticalSkills = [
   "Front-end development",
   "Back-end development",
   "Visual Communication and graphic design",
@@ -74,21 +99,134 @@ var skills = [
   "Search Engine Optimization",
   "Storyboarding"
 ];
+var softwareSkills = [
+  {
+    title: "Adobe",
+    topics: [
+      "Illustrator",
+      "Photoshop",
+      "InDesign",
+      "AfterEffects",
+      "PremierePro",
+      "Flash",
+      "Dreamweaver",
+      "Edgepro",
+      "CharacterAnimator",
+      "Lightroom",
+      "Animate",
+      "Muse"
+    ]
+  },
+  {
+    title: "Corel",
+    topics: ["Draw", "Paint"]
+  },
+  {
+    title: "Other",
+    topics: [
+      "VisualStudio",
+      "IntelliJ",
+      "WebStorm",
+      "Unity",
+      "TVPaint",
+      "3d Studio Max",
+      "Blender"
+    ]
+  }
+];
+
+var programmingSkills = [
+  {
+    title: "Languages",
+    topics: [
+      "HTML5",
+      "CSS",
+      "Javascript",
+      "ES6",
+      "C#",
+      "Java",
+      "Python",
+      "R",
+      "SQL",
+      "PHP"
+    ]
+  },
+  {
+    title: "Frameworks and Libraries",
+    topics: [
+      "React.js",
+      "Vue.js",
+      "Angular 2/4",
+      "Express.js",
+      ".net core 2",
+      "asp.net mvc 5",
+      "OpenCV",
+      "Processing",
+      "jQuery"
+    ]
+  },
+  {
+    title: "Database",
+    topics: ["SQL data base", "MongoDB"]
+  },
+  {
+    title: "CMS",
+    topics: ["Wordpress"]
+  },
+  {
+    title: "Dev ops & other",
+    topics: ["Docker", "Linux Server Management"]
+  }
+];
+
 var works = [
   {
     type: "Front End Developer",
     date: "2015 - Present",
-    company:"QAtor A/S",
-    name: [
-      { type: "url", url: "http://www.qator.com", name: "qator.com" },
-    ],
+    company: "QAtor A/S",
+    name: [{ type: "url", url: "http://www.qator.com", name: "qator.com" }],
+    roles: ["Graphic designer", "UX/UI designer", "Webdesigner and developer"]
+  },
+  {
+    type: "Art Director",
+    date: "2014",
+    company: "Valo TV",
+    name: [{ type: "url", url: "http://www.valo.tv", name: "www.valo.tv" }],
     roles: [
-      "Graphic designer",
-      "UX/UI designer",
-      "Webdesigner and developer"
+      "AD duties unifying Nordic culture materials for visual promotion products.",
+      "Development of illustration to website and interactive presentations.",
+      "Development of motion graphics e.g. video / live event themes",
+      "Research to identify Nordic diversity and bridge intercultural communication."
     ]
   },
-   {
+  {
+    type: "Designer",
+    date: "2014",
+    company: "Openwire Exhibition",
+    name: [
+      { type: "url", url: "http://www.openwire.dk", name: "www.openwire.dk" }
+    ],
+    roles: [
+      "Concept development of mobile application.",
+      "UI/UX design, Graphic design"
+    ]
+  },
+  {
+    type: "Workshop teacher",
+    date: "2012",
+    company: "Bakkegårdsskolen",
+    name: [
+      {
+        type: "url",
+        url: "https://bakkegaard.skoleporten.dk/sp",
+        name: "bakkegaard.skoleporten.dk/sp"
+      }
+    ],
+    roles: [
+      "Bringing different projects for the students in the workshop, in the field of visual design."
+    ]
+  },
+  {
     type: "freelance",
     date: "2011 - Present",
     name: [
@@ -102,12 +240,30 @@ var works = [
     ]
   }
 ];
+
+var languageSkills = [
+  "English (Fluent)",
+  "Danish (Fluent)",
+  "Persian (Native)",
+  "French (Intermediate)",
+];
+var certificates = [
+  "ASP.NET MVC 5 (ITUCATION)",
+  "GxP (QAtor A/S)"
+];
+
+
+
 export default {
   name: "AboutPage",
   data() {
     return {
-      skills: skills,
-      works: works
+      theoriticalSkills: theoriticalSkills,
+      works: works,
+      softwareSkills: softwareSkills,
+      programmingSkills: programmingSkills,
+      languageSkills: languageSkills,
+      certificates: certificates
     };
   },
 
