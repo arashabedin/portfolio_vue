@@ -1,26 +1,50 @@
 
 <template>
-
-    <div class="expander">
+  <div>
+    <div class="expander" v-if="identifier==='work'">
       <input v-bind:id="identifier" class="expander-toggle" type="checkbox">
       <label v-bind:for="identifier" class="expander-label">{{ title }}</label>
       <div class="expander-content">
-      <p v-for="item in body" :key="item.id"> - {{ item }}</p>
+        <div class="work-experience">
+          <div v-for="item in body" :key="item.id">
+            <hr>
+
+            <h3>{{item.type}}</h3>
+            <h3 style="float:right">{{item.date}}</h3>
+            <h4 v-if="item.company">{{item.company}}</h4>
+            <div v-for="x in item.name" :key="x.id">
+              <h5 v-if="x.type==='url'">
+                <a v-bind:href="x.url">{{x.name}}</a>
+              </h5>
+              <h5 v-else>{{x.name}}</h5>
+            </div>
+
+            <h5>Roles:</h5>
+            <h5 v-for="y in item.roles" :key="y.id">- {{y}}</h5>
+
+            <hr>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="expander" v-if="identifier==='skills'">
+      <input v-bind:id="identifier" class="expander-toggle" type="checkbox">
+      <label v-bind:for="identifier" class="expander-label">{{ title }}</label>
+      <div class="expander-content">
+        <p v-for="item in body" :key="item.id">- {{ item }}</p>
+      </div>
+    </div>
+  </div>
 </template>
 
 
 <script>
 export default {
-  el: '#faqq',
-  name: 'Expander',
-  props: [
-  "identifier",
-  "title",
-  "body"
-  ]
-}
+  el: "#faqq",
+  name: "Expander",
+  props: ["identifier", "title", "body"]
+};
 </script>
 <style>
 .expander {
@@ -50,11 +74,11 @@ export default {
   margin: 0 20px 20px;
 }
 .expander .expander-toggle + .expander-label:after {
-  background-color: #4F5150;
+  background-color: #4f5150;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   content: "+";
   display: block;
   float: right;
@@ -71,5 +95,7 @@ export default {
 .expander .expander-toggle:checked + .expander-label:after {
   content: "\2212";
 }
-
+.work-experience {
+  padding: 20px;
+}
 </style>

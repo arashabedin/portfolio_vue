@@ -45,8 +45,9 @@
         <h2>Resumé</h2>
         <p>click on the title to expand the description</p>
         <div id="faqq">
+          <expander identifier="work" title="Work Experience" v-bind:body="works"></expander>
           <expander
-            identifier="pricing"
+            identifier="skills"
             title="Technical and academic knowledge"
             v-bind:body="skills"
           ></expander>
@@ -73,11 +74,40 @@ var skills = [
   "Search Engine Optimization",
   "Storyboarding"
 ];
+var works = [
+  {
+    type: "Front End Developer",
+    date: "2015 - Present",
+    company:"QAtor A/S",
+    name: [
+      { type: "url", url: "http://www.qator.com", name: "qator.com" },
+    ],
+    roles: [
+      "Graphic designer",
+      "UX/UI designer",
+      "Webdesigner and developer"
+    ]
+  },
+   {
+    type: "freelance",
+    date: "2011 - Present",
+    name: [
+      { type: "url", url: "http://www.bmobilized.com", name: "bmobilized.com" },
+      { type: "url", url: "http://www.bmobilized.com", name: "switcherr.com" }
+    ],
+    roles: [
+      "Concept development",
+      "Graphic, website designer, developer",
+      "Motion graphics"
+    ]
+  }
+];
 export default {
   name: "AboutPage",
   data() {
     return {
-      skills: skills
+      skills: skills,
+      works: works
     };
   },
 
