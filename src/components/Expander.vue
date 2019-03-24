@@ -51,6 +51,7 @@
       <input v-bind:id="identifier" class="expander-toggle" type="checkbox">
       <label v-bind:for="identifier" class="expander-label">{{ title }}</label>
       <div class="expander-content">
+         <hr>
         <p v-for="item in body" :key="item.id">- {{ item }}</p>
       </div>
     </div>
