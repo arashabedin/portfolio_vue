@@ -20,9 +20,8 @@
 
     </div>
     
-    <a href="portfolio.html" style="text-decoration:none;">
         
-<div id="portfolio-button"><span id="visitmyworks" style="margin:auto;display:block;text-align:center; position:relative; top:140px; line-height:70px;margin-bottom:-70px; background-image:url('visitmyworks-white.png'); width:95%; background-repeat:no-repeat;background-size:100% auto;max-width:660px;height:80px;"> </span>
+<div id="portfolio-button" v-on:click="goToPortfolio"><span id="visitmyworks" style="margin:auto;display:block;text-align:center; position:relative; top:140px; line-height:70px;margin-bottom:-70px; background-image:url('visitmyworks-white.png'); width:95%; background-repeat:no-repeat;background-size:100% auto;max-width:660px;height:80px;"> </span>
  <div id="go-in-arrow" style="clear: both;
 width: 200px;
 background-size:cover;
@@ -36,7 +35,6 @@ z-index: 1000;">
 
 </div>
 
- </a>  
     
     </div>
 
@@ -66,6 +64,11 @@ export default {
   name: 'IntroPage',
   props: {
     msg: String
+  },
+  methods: {
+    goToPortfolio () {
+        this.$router.push('/portfolio')
+    }
   }
 }
 </script>

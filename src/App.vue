@@ -3,6 +3,7 @@
 
 <template>
   <div id="app">
+    
     <NavBar/>
        <router-view></router-view> 
     <Footer/>
@@ -10,15 +11,12 @@
 </template>
 
 <script>
-import IntroPage from './components/IntroPage.vue'
 import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
-
 
 export default {
   name: 'app',
   components: {
-    IntroPage,
     NavBar,
     Footer
   }

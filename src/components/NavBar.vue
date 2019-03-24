@@ -18,7 +18,9 @@
      <router-link to="/portfolio">Portfolio</router-link>
   </li>
  
-  <li> <a  href="about.html">About</a></li>
+  <li>
+     <router-link to="/about">About</router-link>
+   </li>
  
   <li><a  href="contact.html">Contact</a></li>
    </ul>
