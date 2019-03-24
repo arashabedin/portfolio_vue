@@ -21,7 +21,7 @@
         <div class="projectNavEnlarge">
           <button
             class="enlargeButton"
-            onClick="window.location.href='projects/project_01/nomorewhispers.html'"
+            v-on:click="goToProject"
           >View The Project</button>
         </div>
         <div class="projectNavClose">
@@ -67,9 +67,12 @@ export default {
     },
     hideOverlay: function() {
       this.hovered = false;
+    },
+    goToProject: function() {
+        this.$router.push('/portfolio/'+this.name)
     }
   },
-  props: ["title", "field", "role", "date", "thumbnail"]
+  props: ["name","title", "field", "role", "date", "thumbnail"]
 };
 </script>
 
