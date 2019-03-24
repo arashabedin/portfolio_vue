@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import IntroPage from './components/IntroPage.vue'
 import PortfolioPage from './components/PortfolioPage.vue'
 import AboutPage from './components/AboutPage.vue'
+import ContactPage from './components/ContactPage.vue'
 
 Vue.use(VueRouter)
 
@@ -13,7 +14,9 @@ const routes = [
 
 		{ path: '/', component: IntroPage },
 		{ path: '/portfolio', component: PortfolioPage },
-		{ path: '/about', component: AboutPage }
+		{ path: '/about', component: AboutPage },
+		{ path: '/contact', component: ContactPage }
+
 
 	]
 const router = new VueRouter({

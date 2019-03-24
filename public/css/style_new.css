@@ -1,3 +1,9 @@
+.my_address {
+    width: 290px!important;
+    margin:auto;
+    float: left;
+  }
+
 .left_side{
     width: 48%;
     display: inline-block;
@@ -9,7 +15,13 @@
     display: inline-block;
 }
 
-
+  #contact_container {
+    width: 800px;
+    margin: auto;
+  }
+#contact_form{
+    margin-left: 80px;
+}
 
 
 @media only screen and (max-width: 970px) {
@@ -24,5 +36,17 @@
         width: 100%;
         display: block;
     }
+    #contact_container {
+        width: auto;
+      }
+    #contact_form{
+        margin-left: 0;
+    }
+  }
+  @media only screen and (max-width: 760px) {
+
+    .my_address {
+        float: none;
+      }
     
   }
