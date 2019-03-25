@@ -794,6 +794,7 @@ nav ul li button:hover, nav ul li button:active, nav ul li button:focus, nav ul 
 	height: 285px;
 	display: none;
 	z-index: 10;
+	cursor:pointer;
 }
 
 .projectThumbnailHover h4 {
