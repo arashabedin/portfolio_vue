@@ -4,15 +4,28 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const app = express();
 const logger = require("morgan");
-var connect = require('connect');
-var serveStatic = require('serve-static');
-
+const history = require('connect-history-api-fallback');
 
 
 app.set("port", process.env.PORT || 8001);
 
+const staticFileMiddleware = express.static(path.join(__dirname, "../client/dist"));
+
+app.use(staticFileMiddleware);
+app.use(history({
+  disableDotRule: true,
+  verbose: true
+}));
+app.use(staticFileMiddleware);
+
+app.get('/', function (req, res) {
+  res.render(path.join(__dirname, "../client/dist"));
+});
+
+app.use(express.static(path.join(__dirname, "../client/dist")));
 
 
-connect().use(serveStatic(path.join(__dirname, "../client/dist"))).listen(app.get("port"), function(){
+
+app.listen(app.get("port"),()=>{
     console.log(`Server is running on port ${app.get("port")}`);
 });
