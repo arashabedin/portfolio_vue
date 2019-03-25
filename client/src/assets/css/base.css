@@ -9,7 +9,9 @@
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline; }
+		vertical-align: baseline;
+		background-clip: white;
+	}
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 
@@ -44,7 +46,7 @@
       
         width:100%; 
         height:900px; 
-        background-image:url('./../chaos.jpg'); 
+        background-image:url('../../../public/chaos.jpg'); 
         background-repeat:no-repeat; background-size:cover; 
         background-attachment:fixed;
         color:white;
@@ -56,7 +58,7 @@
     }
     
     #portfolio-button:hover  {
-    background-image:url('./../chaos2.jpg')!important;
+    background-image:url('../../../public/chaos2.jpg')!important;
 color:black;
     }
     #portfolio-button:hover #arrow-portfolio ,  #portfolio-button:active #arrow-portfolio{
@@ -72,7 +74,7 @@ color:black;
           
     }*/
     #portfolio-button:hover #visitmyworks  {
-    background-image: url('./../visitmyworks-black.png')!important;
+    background-image: url('../../../public//visitmyworks-black.png')!important;
     }
     #portfolio-button:hover #click-text {
     display:block!important;
@@ -82,7 +84,7 @@ color:black;
       
         width:100%; 
         height:900px; 
-        background-image:url('./../khotoot-back.jpg'); 
+        background-image:url('../../../public//khotoot-back.jpg'); 
         background-repeat:no-repeat; background-size:cover; 
         background-attachment:fixed;
         color:white;
@@ -94,14 +96,14 @@ color:black;
     #aboutme-button:hover  #eye-portfolio{
       width:200px!important;
     height:175px!important;
-          background-image:url('./../open-eye.png')!important;
+          background-image:url('../../../public/open-eye.png')!important;
           top:215px!important;}
     
   #aboutme-front{
 
         width:100%; 
         height:900px; 
-        background-image:url('./../khotoot-front.png'); 
+        /* background-image:url('../../../public/khotoot-front.png');  */
         background-repeat:no-repeat; background-size:cover; 
         background-attachment:fixed;
         color:white;
@@ -111,7 +113,7 @@ color:black;
     }
     
     #portfolio-button:hover #go-in-arrow{
-    background-image: url('./../go-in-arrow.png');
+    background-image: url('../../../public/go-in-arrow.png');
     }
     
     #typed{
@@ -130,7 +132,6 @@ body {
   font: 14px/21px Arial, sans-serif;
   font-size: 13px;
   text-align: left;
-  background: #E3CAA1;
 }
 
 
@@ -153,10 +154,10 @@ body {
 	top:75px;
 	right:40px;
 	display: none;
-	background: url(../arrow_up.png)  no-repeat 0px 20px;
+	background: url(../../../public/arrow_up.png)  no-repeat 0px 20px;
 	z-index:11;
 	}
-}
+
 .scrollToTop:hover{
 	text-decoration:none;
 }
@@ -200,10 +201,8 @@ ul li ul {
 }
 ul li ul li { 
   background: #555; 
-  display: inline:block;
+  display: inline_block;
   color: #fff;
-  
-
 }
 
 ul li ul li:hover {
@@ -603,389 +602,6 @@ ul li:hover ul {
     }
 
 /*===================================================================================================
-14) Clearing
-===================================================================================================*/
-    /* Self clearing goodness */
-    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
-
-    /* Use clearfix class on parent to clear nested columns, or wrap each row of columns in a <div class="row"> */
-    .clearfix:before,
-    .clearfix:after,
-    .row:before,
-    .row:after {
-      content: '\0020';
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0; }
-    .row:after,
-    .clearfix:after {
-      clear: both; }
-    .row,
-    .clearfix {
-      zoom: 1; }
-
-    /* You can also use a <br class="clear" /> to clear columns */
-    .clear {
-      clear: both;
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0;
-    }
-
-/*===================================================================================================
-15) Portfolio slider
-===================================================================================================*/
-	.portfolioSlider {	
-		position:relative;
-		
-		/* Set width and height of slider here, in px, % or em */
-		width: 600px;
-		height: 300px;
-		
-		/* Used to prevent content "jumping" on page load - this property is removed when JavaScript is loaded and slider is instantiated */
-		overflow: hidden;
-	}
-
-	/* Slides area */
-	.portfolioSlider .portfolioWrapper {
-		overflow:hidden;	
-		position:relative;
-		width:100%; 
-		height:100%;
-	}
-	
-	.portfolioSlider .portfolioSlide,
-	.portfolioSlider .portfolioWrapper {
-		/* Bakground behind slides  */
-		
-		background: #000000;
-		/*
-		background: -moz-linear-gradient(top, #111111 0%, #242424 100%); 	
-		background: -webkit-linear-gradient(top, #111111 0%,#242424 100%); 
-		background: -o-linear-gradient(top, #111111 0%,#242424 100%);
-		background: -ms-linear-gradient(top, #111111 0%,#242424 100%); 	
-		background: linear-gradient(top, #111111 0%,#242424 100%);
-		*/
-	}
-	
-	/* Slides holder, grabbing container */
-	.portfolioSlider .portfolioSlidesContainer {
-		position: relative;
-		left: 0;
-		top: 0 !important;
-		list-style:none !important;
-		margin:0 !important;
-		padding:0 !important;
-		border: 0 !important;
-	}
-	
-	/* Slide item */
-	.portfolioSlider .portfolioSlide {
-		padding: 0 !important;
-		margin: 0 !important;	
-		border: 0 !important;
-		list-style: none !important;
-		position:relative;
-		float:left;
-		overflow:hidden;	
-	}
-
-	/* Arrow navigation */
-	.portfolioSlider .arrow {	
-		/*background:url(../img/controlsSprite.png) no-repeat 0 0;*/
-		background-color: #C00;
-		background-repeat: no-repeat;
-		background-position: 0 0;
-	
-		/* Change arrow size here */
-		width: 45px;
-		height: 90px;
-		top:50%;
-		margin-top:-45px;
-		cursor: pointer;
-		display: block;
-		position: absolute;		
-		z-index:25;
-	}
-	
-	.portfolioSlider .arrow:hover {
-		
-	}
-	.portfolioSlider .arrow.disabled {
-		
-	}
-	
-	/* Left arrow */
-	.portfolioSlider .arrow.left {
-		background-position: top left;
-		left: 0;	
-	}
-	
-	/* Right arrow */
-	.portfolioSlider .arrow.right {
-		background-position: top right;
-		right: 0;
-	}
-	
-	/* Control navigation container (bullets or thumbs) */
-	.portfolioSlider .portfolioControlNavOverflow {
-		width:100%;
-		overflow:hidden;
-		position:absolute;
-		margin-top:-20px;
-		z-index:25;
-	}
-	/* This container is inside ".portfolioControlNavContainer"  
-	   and is used for auto horizontal centering */
-	.portfolioSlider .portfolioControlNavCenterer {	
-		float: left;
-		position: relative;
-		left: -50%;
-	}
-	
-	/* Control navigation container*/ 
-	.portfolioSlider .portfolioControlNavContainer {
-		float: left;
-		position: relative;
-		left: 50%;	
-	}
-	
-	/* Scrollable thumbnails containers */
-	.portfolioSlider .portfolioControlNavThumbsContainer {		
-		left:0;
-		position:relative;
-	}
-	
-	.portfolioSlider .thumbsAndArrowsContainer {
-		overflow:hidden;
-		width: 100%;
-		position: relative;
-	}
-	
-	.portfolioSlider .portfolioControlNavOverflow.portfolioThumbs {	
-		width: auto;
-		position: relative;
-		overflow: hidden;
-		margin-top:4px;	
-	}
-	
-	.portfolioSlider .portfolioControlNavOverflow a{	
-		background:#0C0 none no-repeat scroll 0 0;
-		width:20px;
-		height:20px;	
-		float:left;	
-		cursor:pointer;	
-		position:relative;
-		display:block;
-		text-indent: -9999px;	
-	}
-	
-	/* Current control navigation item */
-	.portfolioSlider .portfolioControlNavOverflow a.current {	
-		background-color: #C00;	
-	}
-	
-	/* Hover state navigation item */
-	.portfolioSlider .portfolioControlNavOverflow a:hover {	
-		background-color: #00C;
-	}
-	
-	/* Thumbnails */
-	.portfolioSlider .portfolioControlNavOverflow a.portfolioThumb{	
-		/*background: none no-repeat 0 0;*/
-		/*background-color: ;*/
-		width:144px;
-		height:60px;	
-		/* thumbnails spacing, use margin-right only */	
-		margin-right:4px;
-	}
-	
-	.portfolioSlider .portfolioControlNavOverflow a.portfolioThumb.current {	
-		background-position: -3px -3px  !important;
-		border:3px solid #C00 !important;
-		width:138px;
-		height:54px;
-	}
-	
-	.portfolioSlider .portfolioControlNavOverflow a.portfolioThumb:hover {	
-		background-position: -3px -3px;	
-		border:3px solid #00C;
-		width:138px;
-		height:54px;
-	}
-	
-	.portfolioSlider .thumbsArrow {	
-		width: 38px;
-		height: 68px;	
-		cursor: pointer;
-		display: block;
-		position: relative;		
-		z-index: 25;
-		background: #C99;
-	}
-	
-	.portfolioSlider .thumbsArrow.left {	
-		float: left;
-	}
-	
-	.portfolioSlider .thumbsArrow.right {	
-		float: right;
-	}
-	
-	.portfolioSlider .thumbsArrow:hover  {
-		
-	}
-	
-	.portfolioSlider .thumbsArrow.disabled {
-		
-	}
-	
-	/* Captions container */
-	.portfolioSlider .portfolioCaption {
-		z-index:20;
-		display:block;
-		position:absolute;	
-		left:0;
-		top:0;
-		/*font: normal normal normal 1em/1.5em Georgia, serif;
-		color:#FFF;		*/
-	}
-	
-	/* Caption item */
-	.portfolioSlider .portfolioCaptionItem {
-		position:absolute;	
-		left:0;
-		top:0;
-		margin: 0;
-		padding: 0;
-	}
-	
-	/* Loading screen */
-	.portfolioSlider .portfolioLoadingScreen {
-		background:#FFF;
-		width:100%;
-		height:100%;
-		position:absolute;
-		z-index:99;	
-	}
-	
-	/* Loading screen text ("Loading...") */
-	.portfolioSlider .portfolioLoadingScreen p {		
-		width:100%;
-		position:absolute;	
-		margin:0 auto;
-		top: 45%;
-		text-align:center;
-	}
-	
-	/* Single slide image preloader */
-	.portfolioSlider .portfolioPreloader {	
-		position: absolute;
-		width: 30px;
-		height: 30px;
-		left: 50%;
-		top: 50%;
-		margin-left: -12px;
-		margin-top: -12px;	
-		z-index: 0;	
-		background-image: url(slider_assets/preloader.gif);
-	}
-	
-	.portfolioSlider .grab-cursor{cursor:move;}
-	.portfolioSlider .grab-cursor{cursor:url("slider_assets/grab.png") 8 8,-moz-grab;}
-	.portfolioSlider .grab-cursor{*cursor:url(slider_assets/grab.cur);}
-	.portfolioSlider .grab-cursor{cursor:move\0/;} /* ie8 hack */
-	
-	.portfolioSlider .grabbing-cursor{cursor:move;}
-	.portfolioSlider .grabbing-cursor{cursor:url("slider_assets/grabbing.png") 8 8,-moz-grabbing;}
-	.portfolioSlider .grabbing-cursor{*cursor:url(slider_assets/grabbing.cur);}
-	
-	/* Cursor used if mouse dragging is disabled */
-	.portfolioSlider .auto-cursor{cursor:auto;}
-	
-	.portfolioSlider .portfolioHtmlContent {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-	
-	.portfolioSlider .non-draggable {
-		cursor: auto;
-	}
-	
-	.portfolioSlider .fade-container .portfolioSlide{
-		position: absolute;
-		left: 0;
-		top: 0;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		z-index: 10;
-	}
-	
-	.portfolioSlider .portfolioImage {
-		max-width:none;
-		margin:0;
-		padding: 0 !important;
-		border: 0 !important;	
-	}
-
-	/* Customization */
-	.projectThumbnail {
-		cursor: pointer;	
-	}
-	
-	.project img.thumbnailImage {
-		max-width: 100%;
-		height: auto;
-		cursor: pointer;
-	}
-	
-	.portfolioSlider {
-		width: 100%;
-		position: absolute;
-		left: 0;
-		top: 0;
-		overflow: hidden;
-		z-index: 10;
-	}
-	
-	.portfolioSliderData {
-		display: none;
-		overflow: hidden;
-	}
-	
-	.portfolioSlidesContainer {
-		display: block;
-	}
-	
-	.first-img-preloader {
-		position: absolute;
-		left: 0;
-		top: 0;
-		z-index: 12;
-		background: #000;
-		/*background: rgba(0,0,0,1.0);*/
-		/*filter:inherit;*/
-	}
-	
-	.preloader-graphics {
-		position: relative;
-		width: 30px;
-		height: 30px;
-		left: 50%;
-		top: 50%;
-		margin-left: -12px;
-		margin-top: -12px;	
-		z-index: 0;	
-		background-image: url(slider_assets/preloader.gif);
-	}
-
-/*===================================================================================================
 16) Site styles
 ===================================================================================================*/
 h1 { font-size: 48px; line-height: 1.2; }
@@ -1024,7 +640,6 @@ button.currentPage:hover {
 
 header {
 	padding-top: 80px;
-	border-top: 3px solid #000;
 }
 
 #logo, #logoDetailView {
@@ -1067,7 +682,7 @@ a, a:visited {
 	color: #333;
 }
 
-a:hover, a:active, a:focus, #heroNav a:hover, #heroNav a:visited:hover, #heroNav a:active, #heroNav a:focus, #formSubmit:hover, .contentModule a:hover, .contentModule a:visited:hover, .contentModule a:active, .contentModule a:focus { color: #777777; } {
+a:hover, a:active, a:focus, #heroNav a:hover, #heroNav a:visited:hover, #heroNav a:active, #heroNav a:focus, #formSubmit:hover, .contentModule a:hover, .contentModule a:visited:hover, .contentModule a:active, .contentModule a:focus {
 	color: #888;
 }
 
@@ -1352,7 +967,7 @@ p, .projectInfo p, .projectInfo li {
     text-align-last: left;
 }
 
-}
+
 
 .projectInfo ul {
 	margin-top: -8px;
@@ -1805,7 +1420,7 @@ code {
 .works figure .zoom{ 
 	display: block; 
 	position: absolute; top: 10px; left: 0; 
-	background: url(../img/zoom.png) no-repeat center; 
+	/* background: url(../../../public/img/zoom.png) no-repeat center;  */
 	width: 100%; height: 100%; 
 	*zoom: 1;
 	opacity: 0;

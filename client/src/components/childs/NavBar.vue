@@ -2,7 +2,7 @@
   <div class="container">
     <header class="sixteencolumns">
       <div id="logo">
-        <img src="logo.jpg" width="174" height="89">
+        <img src="@/assets/logo.jpg" width="174" height="89">
       </div>
       <nav class="nav">
         <ul>

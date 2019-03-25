@@ -11,16 +11,10 @@
 
 </script>
 
+<style lang="scss">
+</style>
 
 
-<script src="js/libs/modernizr.min.js"></script>
-<script src="js/libs/jquery-1.8.3.min.js"></script>
-<script src="js/libs/jquery.easing.1.3.min.js"></script>
-<script src="js/libs/jquery.fitvids.js"></script>
-    <script src="typed.js"></script>
-    <script src="scripts.js"></script>
-
-    
 <template>
   <div id="app">
     
