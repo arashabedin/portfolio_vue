@@ -124,7 +124,7 @@
 </template>
 
 <script>
-import EachProject from "../child/EachProject.vue";
+import EachProject from "../childs/EachProject.vue";
 import data from "../../rawdata/allProjects.js";
 import animateActivation from "../../helpers/portfolio_page_animate.js";
 export default {

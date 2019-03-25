@@ -8,7 +8,7 @@ var data = [
             { type: "image", src: "/projects/project_01/images/project_01_large_b.jpg" },
             { type: "image", src: "/projects/project_01/images/project_01_large_c.jpg" },
             { type: "image", src: "/projects/project_01/images/project_01_large_d.jpg" },
-            { type: "image", src: "/projects/project_01/images/project_01_large_e.jpg" },
+            // { type: "image", src: "/projects/project_01/images/project_01_large_e.jpg" },
         ]
     },
     {
@@ -38,8 +38,8 @@ var data = [
         name: "illustration5",
         data: [
 
-            { type: "image", src: "/projects/natland/images/project_01_large_a.jpg" },
-            { type: "image", src: "/projects/natland/images/project_01_large_b.jpg" },
+            { type: "image", src: "/projects/natland/images/project_01_large_a.jpg",size:"xmedium" },
+            { type: "image", src: "/projects/natland/images/project_01_large_b.jpg",size:"xmedium" },
         ]
     },
     {

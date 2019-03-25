@@ -31,8 +31,8 @@
 </template>
 
 <script>
-import NavBar from './components/child/NavBar.vue'
-import Footer from './components/child/Footer.vue'
+import NavBar from './components/childs/NavBar.vue'
+import Footer from './components/childs/Footer.vue'
 
 export default {
   name: 'app',

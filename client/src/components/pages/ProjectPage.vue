@@ -27,7 +27,7 @@
 
 <script>
 import allData from "../../rawdata/worksInfo.js";
-import Vipp from "./Vipp"
+import Vipp from "./VippPage"
 export default {
   name: "NavBar",
   data() {
@@ -73,7 +73,7 @@ export default {
 @media only screen and (max-width: 760px) {
   .xmedium,
   .medium {
-    width: 80%;
+    width: 100%;
   }
   .video{
     width: 100%;

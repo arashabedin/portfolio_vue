@@ -83,7 +83,7 @@
 </template>
 
 <script>
-import expander from "../child/Expander.vue";
+import expander from "../childs/Expander.vue";
 import data from "../../rawdata/mySkills.js"
 
 export default {
