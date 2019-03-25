@@ -1,10 +1,11 @@
 <template>
-  <div
-   
-    v-bind:class="{ project: true, project_expanded:expanded}"
-    id="box1"
-  >
-    <div  v-on:click="expandProject" @mouseover="showOverlay" @mouseout="hideOverlay"  class="projectThumbnail">
+  <div v-bind:class="{ project: true, project_expanded:expanded}" id="box1">
+    <div
+      v-on:click="expandProject"
+      @mouseover="showOverlay"
+      @mouseout="hideOverlay"
+      class="projectThumbnail"
+    >
       <svg class="thumbnailMask"></svg>
       <div v-bind:class="{ projectThumbnailHover: true, project_hovered:hovered}">
         <h4>{{title}}</h4>
@@ -19,10 +20,7 @@
       <div class="projectNavCounter"></div>
       <div class="projectNav">
         <div class="projectNavEnlarge">
-          <button
-            class="enlargeButton"
-            v-on:click="goToProject"
-          >View The Project</button>
+          <button class="enlargeButton" v-on:click="goToProject">View The Project</button>
         </div>
         <div class="projectNavClose">
           <button v-on:click="expandProject" class="closeButton">Close</button>
@@ -63,16 +61,37 @@ export default {
       }
     },
     showOverlay: function() {
-       this.hovered = true;
+      this.hovered = true;
     },
     hideOverlay: function() {
       this.hovered = false;
     },
     goToProject: function() {
-        this.$router.push('/portfolio/'+this.name)
+      switch (this.name) {
+        case "qator":
+          window.open("http://www.qator.com");
+          break;
+        case "flip":
+          window.open("/projects/flipskate/flip.html");
+          break;
+        case "pendant":
+          window.open("/projects/pendant/index.html");
+          break;
+        case "game":
+          window.open("/games/good-night-story.html");
+          break;
+        case "hse":
+          window.open("/projects/hse/index.html");
+          break;
+           case "cmc":
+          window.open("/projects/cominghomecafe/cominghomecafe.html");
+          break;
+        default:
+          this.$router.push("/portfolio/" + this.name);
+      }
     }
   },
-  props: ["name","title", "field", "role", "date", "thumbnail"]
+  props: ["name", "title", "field", "role", "date", "thumbnail"]
 };
 </script>
 

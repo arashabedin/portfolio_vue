@@ -2,6 +2,7 @@
 
 <template>
   <div class="container">
+    <a href="#" class="scrollToTop"></a>
     <nav id="nav2">
       <ul>
         <li id="illustration">Illustration</li>
@@ -207,7 +208,7 @@ var graphics = [
     thumbnail: "images/projects/qaicons.jpg"
   },
   {
-    name: "graphic2",
+    name: "hse",
     title: "Hot Spring Enthusiasts",
     field: ["Icon Design"],
     role: ["Logo Design", "UX/UI Design"],
@@ -215,7 +216,7 @@ var graphics = [
     thumbnail: "images/projects/hse.jpg"
   },
   {
-    name: "graphic3",
+    name: "vipp",
     title: "VIPP",
     field: ["UX/UI Design"],
     role: ["UX/UI Design"],
@@ -223,7 +224,7 @@ var graphics = [
     thumbnail: "images/projects/vipp.gif"
   },
   {
-    name: "graphic4",
+    name: "cmc",
     title: "Coming home café",
     field: ["UX/UI Design"],
     role: ["UX/UI Design"],
@@ -266,39 +267,39 @@ var graphics = [
 
 var websites = [
   {
-    name: "website1",
+    name: "qator",
     title: "QAtor A/S",
     field: ["Website"],
     role: ["Graphic Design", "Web Development"],
     date: "2015 - 2016",
     thumbnail: "images/projects/qator.jpg"
   },
+  // {
+  //   name: "website2",
+  //   title: "Main Deli Steakhouse",
+  //   field: ["Website"],
+  //   role: ["Graphic Design", "Web Development"],
+  //   date: "2016",
+  //   thumbnail: "images/projects/maindeli.jpg"
+  // },
   {
-    name: "website2",
-    title: "Main Deli Steakhouse",
-    field: ["Website"],
-    role: ["Graphic Design", "Web Development"],
-    date: "2016",
-    thumbnail: "images/projects/maindeli.jpg"
-  },
-  {
-    name: "website3",
+    name: "flip",
     title: "Flip Skateboard",
     field: ["Website"],
     role: ["Graphic Design", "Web Development"],
     date: "2009",
     thumbnail: "images/projects/flipskate.jpg"
   },
+  // {
+  //   name: "website4",
+  //   title: "Onkel Dannys",
+  //   field: ["Website"],
+  //   role: ["Graphic Design", "Web Development"],
+  //   date: "2015",
+  //   thumbnail: "images/projects/onkeldannys.jpg"
+  // },
   {
-    name: "website4",
-    title: "Onkel Dannys",
-    field: ["Website"],
-    role: ["Graphic Design", "Web Development"],
-    date: "2015",
-    thumbnail: "images/projects/onkeldannys.jpg"
-  },
-  {
-    name: "website5",
+    name: "pendant",
     title: "Café Pendant",
     field: ["Website"],
     role: ["Graphic Design", "Web Development"],
@@ -335,16 +336,16 @@ var videos = [
 ];
 
 var concepts = [
+  // {
+  //   name: "concept1",
+  //   title: "SOUNDBIB",
+  //   field: ["Concept Development"],
+  //   role: ["Concept Development"],
+  //   date: "2013",
+  //   thumbnail: "images/projects/soundbib.jpg"
+  // },
   {
-    name: "concept1",
-    title: "SOUNDBIB",
-    field: ["Concept Development"],
-    role: ["Concept Development"],
-    date: "2013",
-    thumbnail: "images/projects/soundbib.jpg"
-  },
-  {
-    name: "concept2",
+    name: "game",
     title: "Arash Games",
     field: ["JavaScript Game Development"],
     role: ["Concept", "Gamification", "Development"],
@@ -372,66 +373,4 @@ export default {
   }
 };
 
-import $ from "jquery";
-$(function() {
-  $("#website").bind("click", function() {
-    $("html, body").animate(
-      {
-        scrollTop: $("#website2").offset().top
-      },
-      2000
-    ); //Prevent Default and event bubbling.
-  });
-
-  $("#graphics").bind("click", function() {
-    $("html, body").animate(
-      {
-        scrollTop: $("#graphics2").offset().top
-      },
-      2000
-    ); //Prevent Default and event bubbling.
-  });
-
-  $("#illustration").bind("click", function() {
-    $("html, body").animate(
-      {
-        scrollTop: $("#illustration2").offset().top
-      },
-      2000
-    ); //Prevent Default and event bubbling.
-  });
-
-  $("#concepts").bind("click", function() {
-    $("html, body").animate(
-      {
-        scrollTop: $("#concept").offset().top
-      },
-      2000
-    ); //Prevent Default and event bubbling.
-  });
-
-  $("#videos").bind("click", function() {
-    $("html, body").animate(
-      {
-        scrollTop: $("#videos2").offset().top
-      },
-      2000
-    ); //Prevent Default and event bubbling.
-  });
-
-  //Check to see if the window is top if not then display button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $(".scrollToTop").fadeIn();
-    } else {
-      $(".scrollToTop").fadeOut();
-    }
-  });
-
-  //Click event to scroll to top
-  $(".scrollToTop").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, 800);
-    return false;
-  });
-});
 </script>

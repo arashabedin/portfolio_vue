@@ -1,4 +1,6 @@
 <template>
+<div>
+  <vipp v-if="name==='vipp'"></vipp>
   <div v-if="data" class="container">
     <div v-for="item in data.data" :key="item.id">
       <span v-if="item.type==='image'">
@@ -8,6 +10,11 @@
           alt="Project 01"
         >
       </span>
+      <span v-if="item.type==='video'">
+          <iframe 
+          v-bind:class="{centered:true, video:true}"
+          v-bind:src="item.src"></iframe>
+      </span>
       <p>
         <strong></strong>
       </p>
@@ -15,24 +22,31 @@
       <hr>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
 import allData from "../rawdata/worksinfo.js";
+import Vipp from "./Vipp"
 export default {
   name: "NavBar",
   data() {
     return {
-      data: null
+      data: null,
+      name:null
     };
   },
   props: {},
   created() {
-    var name = this.$router.history.current.params.project;
+    this.name = this.$router.history.current.params.project;
     this.data = allData.find(obj => {
-      return obj.name === name;
+      return obj.name === this.name;
     });
     console.log(this.data);
+  },
+    components: {
+    Vipp
+    
   }
 };
 </script>
@@ -42,16 +56,27 @@ export default {
   display: block;
   width: 100%;
 }
+.true{
+    width:800px;
+}
 .medium {
   width: 60%;
 }
 .xmedium {
   width: 80%;
 }
+.video{
+    width: 80%;
+    height: 400px;
+}
 
 @media only screen and (max-width: 760px) {
- .xmedium, .medium {
+  .xmedium,
+  .medium {
     width: 80%;
   }
+  .video{
+    width: 100%;
+}
 }
 </style>
