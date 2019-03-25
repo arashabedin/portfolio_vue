@@ -771,7 +771,7 @@ nav ul li button:hover, nav ul li button:active, nav ul li button:focus, nav ul 
     display: inline-block;
     margin: 20px;
 	vertical-align: top;
-	height: 274px;
+	height: 285px;
 }
 .project_expanded{
 	height: auto;
@@ -791,7 +791,7 @@ nav ul li button:hover, nav ul li button:active, nav ul li button:focus, nav ul 
 	background-color: rgba(0, 0, 0, 0.8);
 	position: absolute;
 	width: 100%;
-	height: 274px;
+	height: 285px;
 	display: none;
 	z-index: 10;
 }
