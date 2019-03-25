@@ -7,7 +7,7 @@ const logger = require("morgan");
 const history = require('connect-history-api-fallback');
 
 
-app.set("port", process.env.PORT || 8001);
+app.set("port", process.env.PORT || 80);
 
 const staticFileMiddleware = express.static(path.join(__dirname, "../client/dist"));
 
