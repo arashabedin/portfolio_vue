@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-import IntroPage from './components/IntroPage.vue'
-import PortfolioPage from './components/PortfolioPage.vue'
-import AboutPage from './components/AboutPage.vue'
-import ContactPage from './components/ContactPage.vue'
-import ProjectPage from './components/ProjectPage.vue'
+import IntroPage from './components/page/IntroPage.vue'
+import PortfolioPage from './components/page/PortfolioPage.vue'
+import AboutPage from './components/page/AboutPage.vue'
+import ContactPage from './components/page/ContactPage.vue'
+import ProjectPage from './components/page/ProjectPage.vue'
 
 Vue.use(VueRouter)
 

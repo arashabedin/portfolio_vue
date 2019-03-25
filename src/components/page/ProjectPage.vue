@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import allData from "../rawdata/worksinfo.js";
+import allData from "../../rawdata/worksInfo.js";
 import Vipp from "./Vipp"
 export default {
   name: "NavBar",
