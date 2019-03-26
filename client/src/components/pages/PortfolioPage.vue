@@ -137,7 +137,7 @@ import data from "../../rawdata/allProjects.js";
 import animateActivation from "../../helpers/portfolio_page_animate.js";
 
 var iteration = 0;
-var indexableData = Object.keys(data);
+var keysInData = Object.keys(data);
 function titlePosition()  { 
       if (iteration === 0) {
         iteration += 1;
@@ -145,7 +145,7 @@ function titlePosition()  {
       } else {
         var prevLength = 0;
         for (var i = 0; i < iteration; i++) {
-          prevLength += data[indexableData[i]].length + iteration
+          prevLength += data[keysInData[i]].length + iteration
         }
         if (prevLength % 2 === 0) {
           iteration += 1;
