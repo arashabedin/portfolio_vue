@@ -169,7 +169,6 @@ export default {
   },
   methods: {},
   props: {
-    msg: String
   },
   components: {
     EachProject

@@ -3,15 +3,12 @@ var data = {
     theoriticalSkills : [
       "Front-end development",
       "Back-end development",
-      "Visual Communication and graphic design",
-      "Illustration",
+      "Android Development",
+      "Graphic Design",
       "UX/UI design",
-      "Web development",
-      "Service design",
-      "User research",
-      "Responsive webdesign",
+      "Illustration",
+      "Service Design",
       "Motion graphic",
-      "Wordpress development",
       "Search Engine Optimization",
       "Storyboarding"
     ],
@@ -25,12 +22,8 @@ var data = {
           "AfterEffects",
           "PremierePro",
           "Flash",
-          "Dreamweaver",
-          "Edgepro",
-          "CharacterAnimator",
-          "Lightroom",
-          "Animate",
-          "Muse"
+          "UX",
+          "etc.",
         ]
       },
       {
@@ -42,7 +35,7 @@ var data = {
         topics: [
           "Visual Studio",
           "IntelliJ",
-          "WebStorm",
+          "Android Studio",
           "Unity",
           "TVPaint",
           "3d Studio Max",
@@ -57,7 +50,7 @@ var data = {
         topics: [
           "HTML5",
           "CSS",
-          "Javascript",
+          "JavaScript",
           "ES6",
           "C#",
           "Java",
@@ -91,14 +84,14 @@ var data = {
       },
       {
         title: "Dev ops & other",
-        topics: ["Docker", "Linux Server Management"]
+        topics: ["Docker", "Heroku","Git","Linux Command-line"]
       }
     ],
     
     works : [
       {
         type: "Front End Developer",
-        date: "2015 - Present",
+        date: "2015 - 2016",
         company: "QAtor A/S",
         name: [{ type: "url", url: "http://www.qator.com", name: "qator.com" }],
         roles: ["Graphic designer", "UX/UI designer", "Webdesigner and developer"]
@@ -147,7 +140,7 @@ var data = {
         date: "2011 - Present",
         name: [
           { type: "url", url: "http://www.bmobilized.com", name: "bmobilized.com" },
-          { type: "url", url: "http://www.bmobilized.com", name: "switcherr.com" }
+          { type: "url", url: "http://www.switcherr.com", name: "switcherr.com" }
         ],
         roles: [
           "Concept development",
@@ -161,11 +154,11 @@ var data = {
       "English (Fluent)",
       "Danish (Fluent)",
       "Persian (Native)",
-      "French (Intermediate)",
+      "French (Beginner)",
     ],
     certificates : [
-      "ASP.NET MVC 5 (ITUCATION)",
-      "GxP (QAtor A/S)"
+      "GxP (QAtor A/S)",
+      "ASP.NET MVC 5 (ITUCATION)"
     ]
     
     }
