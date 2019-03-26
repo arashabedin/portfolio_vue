@@ -24,7 +24,7 @@
         <!-- illstration ================================================================= -->
         <div class="project">
           <div id="illustration2">
-            <img src="images/projects/illustration.jpg">
+            <div class="portfolio_field_title_left"><span>Illustration</span></div>
           </div>
         </div>
 
@@ -42,7 +42,7 @@
         <!--Graphic design begins ================================================================= -->
         <div class="project">
           <div id="graphics2">
-            <img src="images/projects/ulux.jpg">
+            <div class="portfolio_field_title_right"><span class="title_with_p">Graphic</span></div>
           </div>
         </div>
 
@@ -60,7 +60,7 @@
         <!-- Website begins ================================================================= -->
         <div class="project">
           <div id="website2">
-            <img src="images/projects/website.jpg">
+            <div class="portfolio_field_title_left"><span>Websites</span></div>
           </div>
         </div>
 
@@ -80,7 +80,7 @@
        
         <div class="project">
           <div id="videos2">
-            <img src="images/projects/video.jpg">
+            <div class="portfolio_field_title_left"><span>Videos</span></div>
           </div>
         </div>
 
@@ -99,7 +99,7 @@
         <!-- concepts begins ================================================================= -->
         <div class="project">
           <div id="concept">
-            <img src="images/projects/concepts.jpg">
+            <div class="portfolio_field_title_left"><span class="title_with_p">Concepts</span></div>
           </div>
         </div>
 

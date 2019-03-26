@@ -26,6 +26,32 @@
   background-color: rgba(0, 0, 0, 0.6)!important;
   display: block!important;
 }
+.portfolio_field_title_left{
+  width: 283px;
+  background-color: black;
+  height: 47px;
+}
+
+.portfolio_field_title_left span , .portfolio_field_title_right span {
+  color: white;
+  font-size: 44px;
+  position: relative;
+  float: right;
+  top: 22px;
+  right: 17px;
+}
+
+.portfolio_field_title_right{
+  width: 283px;
+  background-color: black;
+  height: 47px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.title_with_p{
+  top: 16px!important;
+}
 
 @media only screen and (max-width: 970px) {
     .left_side{
