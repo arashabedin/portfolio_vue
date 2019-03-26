@@ -42,7 +42,7 @@
         <!--Graphic design begins ================================================================= -->
         <div class="project">
           <div id="graphics2">
-            <div class="portfolio_field_title_right"><span class="title_with_p">Graphic</span></div>
+            <div v-bind:class="{portfolio_field_title_left:graphicLeft,portfolio_field_title_right:!graphicLeft}"><span class="title_with_p">Graphic</span></div>
           </div>
         </div>
 
@@ -60,7 +60,7 @@
         <!-- Website begins ================================================================= -->
         <div class="project">
           <div id="website2">
-            <div class="portfolio_field_title_left"><span>Websites</span></div>
+            <div v-bind:class="{portfolio_field_title_left:websiteLeft,portfolio_field_title_right:!websiteLeft}"><span>Websites</span></div>
           </div>
         </div>
 
@@ -80,7 +80,7 @@
        
         <div class="project">
           <div id="videos2">
-            <div class="portfolio_field_title_left"><span>Videos</span></div>
+            <div v-bind:class="{portfolio_field_title_left:videoLeft,portfolio_field_title_right:!videoLeft}"><span>Videos</span></div>
           </div>
         </div>
 
@@ -99,7 +99,7 @@
         <!-- concepts begins ================================================================= -->
         <div class="project">
           <div id="concept">
-            <div class="portfolio_field_title_left"><span class="title_with_p">Concepts</span></div>
+            <div  v-bind:class="{portfolio_field_title_left:conceptLeft,portfolio_field_title_right:!conceptLeft}"><span class="title_with_p">Concepts</span></div>
           </div>
         </div>
 
@@ -127,6 +127,11 @@
 import EachProject from "../childs/EachProject.vue";
 import data from "../../rawdata/allProjects.js";
 import animateActivation from "../../helpers/portfolio_page_animate.js";
+const graphicLeft = (data.illustrations.length + 1) % 2 === 0;
+const websiteLeft = (data.illustrations.length + data.graphics.length + 2) % 2 === 0;
+const videoLeft = (data.illustrations.length + data.graphics.length + data.websites.length + 3) % 2 === 0;
+const conceptLeft = (data.illustrations.length + data.graphics.length + data.websites.length + data.videos.length + 4) % 2 === 0;
+
 export default {
   name: "PortfolioPage",
   created() {
@@ -134,7 +139,11 @@ export default {
   },
   data() {
     return {
-    data
+    data,
+    graphicLeft,
+    websiteLeft,
+    videoLeft,
+    conceptLeft
     };
   },
   props: {

@@ -1,6 +1,6 @@
 var data = {
     illustrations: [
-      {
+      { type:"illustration",
         name: "illustration1",
         title: "No more whispers",
         field: ["Digital art"],
@@ -9,6 +9,7 @@ var data = {
         thumbnail: "images/projects/project_01_desaturated.jpg"
       },
       {
+        type:"illustration",
         name: "illustration2",
         title: "RunRunRun",
         field: ["Illustration"],
@@ -17,6 +18,7 @@ var data = {
         thumbnail: "images/projects/runrunrun.jpg"
       },
       {
+        type:"illustration",
         name: "illustration3",
         title: "Portraits",
         field: ["Illustration"],
@@ -25,6 +27,7 @@ var data = {
         thumbnail: "images/projects/portraits.jpg"
       },
       {
+        type:"illustration",
         name: "illustration4",
         title: "Everything Turns Gray",
         field: ["Illustration"],
@@ -33,6 +36,7 @@ var data = {
         thumbnail: "images/projects/turnsgray.jpg"
       },
       {
+        type:"illustration",
         name: "illustration5",
         title: "Natland Music Band",
         field: ["Illustration"],
@@ -49,6 +53,7 @@ var data = {
         thumbnail: "images/projects/faza.jpg"
       },
       {
+        type:"illustration",
         name: "illustration7",
         title: "Sketches",
         field: ["Illustration"],
@@ -57,16 +62,18 @@ var data = {
         thumbnail: "images/projects/sketchs-1.jpg"
       },
       {
+        type:"illustration",
         name: "illustration8",
         title: "Through a dog's eye",
         field: ["Illustration"],
         role: ["Illustration"],
         date: "2012",
         thumbnail: "images/projects/convers.jpg"
-      }
+      },
     ],
     graphics: [
       {
+        type:"graphic",
         name: "graphic1",
         title: "QA icons",
         field: ["Icon Design"],
@@ -75,6 +82,7 @@ var data = {
         thumbnail: "images/projects/qaicons.jpg"
       },
       {
+        type:"graphic",
         name: "hse",
         title: "Hot Spring Enthusiasts",
         field: ["Icon Design"],
@@ -83,6 +91,7 @@ var data = {
         thumbnail: "images/projects/hse.jpg"
       },
       {
+        type:"graphic",
         name: "vipp",
         title: "VIPP",
         field: ["UX/UI Design"],
@@ -91,6 +100,7 @@ var data = {
         thumbnail: "images/projects/vipp.gif"
       },
       {
+        type:"graphic",
         name: "cmc",
         title: "Coming home café",
         field: ["UX/UI Design"],
@@ -99,6 +109,7 @@ var data = {
         thumbnail: "images/projects/cominghomecafe.jpg"
       },
       {
+        type:"graphic",
         name: "graphic5",
         title: "Openwire",
         field: ["Openwire exhibition Poster"],
@@ -107,6 +118,7 @@ var data = {
         thumbnail: "http://i59.tinypic.com/2mmd443.jpg"
       },
       {
+        type:"graphic",
         name: "graphic6",
         title: "Openwire",
         field: ["UX/UI Design"],
@@ -115,6 +127,7 @@ var data = {
         thumbnail: "images/projects/openwire.gif"
       },
       {
+        type:"graphic",
         name: "graphic7",
         title: "ValoTV - Dome of Visions",
         field: ["Poster design"],
@@ -123,6 +136,7 @@ var data = {
         thumbnail: "images/projects/domeofvisions.jpg"
       },
       {
+        type:"graphic",
         name: "graphic8",
         title: "Nordic Animals T-shirt Contest",
         field: ["Social media Cover photo"],
@@ -134,6 +148,7 @@ var data = {
   
     websites: [
       {
+        type:"website",
         name: "qator",
         title: "QAtor A/S",
         field: ["Website"],
@@ -150,6 +165,7 @@ var data = {
       //   thumbnail: "images/projects/maindeli.jpg"
       // },
       {
+        type:"website",
         name: "flip",
         title: "Flip Skateboard",
         field: ["Website"],
@@ -166,6 +182,7 @@ var data = {
       //   thumbnail: "images/projects/onkeldannys.jpg"
       // },
       {
+        type:"website",
         name: "pendant",
         title: "Café Pendant",
         field: ["Website"],
@@ -177,6 +194,7 @@ var data = {
   
     videos: [
       {
+        type:"video",
         name: "video1",
         title: "Mia Nyegaard",
         field: ["Video"],
@@ -185,6 +203,7 @@ var data = {
         thumbnail: "images/projects/mia.jpg"
       },
       {
+        type:"video",
         name: "video2",
         title: "Zibat Talks",
         field: ["Video"],
@@ -193,6 +212,7 @@ var data = {
         thumbnail: "images/projects/zibat.jpg"
       },
       {
+        type:"video",
         name: "video3",
         title: "Helsinki Design Week",
         field: ["Video"],
@@ -212,6 +232,7 @@ var data = {
       //   thumbnail: "images/projects/soundbib.jpg"
       // },
       {
+        type:"concept",
         name: "game",
         title: "Arash Games",
         field: ["JavaScript Game Development"],
