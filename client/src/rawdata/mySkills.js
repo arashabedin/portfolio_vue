@@ -40,7 +40,7 @@ var data = {
       {
         title: "Other",
         topics: [
-          "VisualStudio",
+          "Visual Studio",
           "IntelliJ",
           "WebStorm",
           "Unity",

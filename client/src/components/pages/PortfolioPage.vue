@@ -44,9 +44,7 @@
         <!--Graphic design begins ================================================================= -->
         <div class="project">
           <div id="graphics2">
-            <div
-              v-bind:class="titlePosition()"
-            >
+            <div v-bind:class="titlePosition()">
               <span class="title_with_p">Graphic</span>
             </div>
           </div>
@@ -66,7 +64,7 @@
         <!-- Website begins ================================================================= -->
         <div class="project">
           <div id="website2">
-             <div v-bind:class="titlePosition()">
+            <div v-bind:class="titlePosition()">
               <span>Websites</span>
             </div>
           </div>
@@ -138,24 +136,25 @@ import animateActivation from "../../helpers/portfolio_page_animate.js";
 
 var iteration = 0;
 var keysInData = Object.keys(data);
-function titlePosition()  { 
-      if (iteration === 0) {
-        iteration += 1;
-        return "portfolio_field_title_left";
-      } else {
-        var prevLength = 0;
-        for (var i = 0; i < iteration; i++) {
-          prevLength += data[keysInData[i]].length + iteration
-        }
-        if (prevLength % 2 === 0) {
-          iteration += 1;
-          return "portfolio_field_title_left";
-        } else {
-          iteration += 1;
-          return "portfolio_field_title_right";
-        }
-      }
+function titlePosition() {
+  if (iteration === keysInData.length) iteration = 0;
+  if (iteration === 0) {
+    iteration += 1;
+    return "portfolio_field_title_left";
+  } else {
+    var prevLength = 0;
+    for (var i = 0; i < iteration; i++) {
+      prevLength += data[keysInData[i]].length + iteration;
     }
+    if (prevLength % 2 === 0) {
+      iteration += 1;
+      return "portfolio_field_title_left";
+    } else {
+      iteration += 1;
+      return "portfolio_field_title_right";
+    }
+  }
+}
 
 export default {
   name: "PortfolioPage",
@@ -168,10 +167,7 @@ export default {
       titlePosition
     };
   },
-  methods: {
-    
-    
-  },
+  methods: {},
   props: {
     msg: String
   },
