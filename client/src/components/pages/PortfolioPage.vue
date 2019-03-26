@@ -24,7 +24,9 @@
         <!-- illstration ================================================================= -->
         <div class="project">
           <div id="illustration2">
-            <div class="portfolio_field_title_left"><span>Illustration</span></div>
+            <div v-bind:class="titlePosition()">
+              <span>Illustration</span>
+            </div>
           </div>
         </div>
 
@@ -42,7 +44,11 @@
         <!--Graphic design begins ================================================================= -->
         <div class="project">
           <div id="graphics2">
-            <div v-bind:class="{portfolio_field_title_left:graphicLeft,portfolio_field_title_right:!graphicLeft}"><span class="title_with_p">Graphic</span></div>
+            <div
+              v-bind:class="titlePosition()"
+            >
+              <span class="title_with_p">Graphic</span>
+            </div>
           </div>
         </div>
 
@@ -60,10 +66,11 @@
         <!-- Website begins ================================================================= -->
         <div class="project">
           <div id="website2">
-            <div v-bind:class="{portfolio_field_title_left:websiteLeft,portfolio_field_title_right:!websiteLeft}"><span>Websites</span></div>
+             <div v-bind:class="titlePosition()">
+              <span>Websites</span>
+            </div>
           </div>
         </div>
-
 
         <each-project
           v-for="item in data.websites"
@@ -77,14 +84,15 @@
         />
 
         <!-- Video begins ================================================================= -->
-       
+
         <div class="project">
           <div id="videos2">
-            <div v-bind:class="{portfolio_field_title_left:videoLeft,portfolio_field_title_right:!videoLeft}"><span>Videos</span></div>
+            <div v-bind:class="titlePosition()">
+              <span>Videos</span>
+            </div>
           </div>
         </div>
 
- 
         <each-project
           v-for="item in data.videos"
           :key="item.id"
@@ -99,10 +107,11 @@
         <!-- concepts begins ================================================================= -->
         <div class="project">
           <div id="concept">
-            <div  v-bind:class="{portfolio_field_title_left:conceptLeft,portfolio_field_title_right:!conceptLeft}"><span class="title_with_p">Concepts</span></div>
+            <div v-bind:class="titlePosition()">
+              <span class="title_with_p">Concepts</span>
+            </div>
           </div>
         </div>
-
 
         <each-project
           v-for="item in data.concepts"
@@ -116,7 +125,6 @@
         />
       </div>
 
- 
       <div class="eight columns" id="col2"></div>
     </div>
     <!-- Work page ends ========================================================================= -->
@@ -127,10 +135,27 @@
 import EachProject from "../childs/EachProject.vue";
 import data from "../../rawdata/allProjects.js";
 import animateActivation from "../../helpers/portfolio_page_animate.js";
-const graphicLeft = (data.illustrations.length + 1) % 2 === 0;
-const websiteLeft = (data.illustrations.length + data.graphics.length + 2) % 2 === 0;
-const videoLeft = (data.illustrations.length + data.graphics.length + data.websites.length + 3) % 2 === 0;
-const conceptLeft = (data.illustrations.length + data.graphics.length + data.websites.length + data.videos.length + 4) % 2 === 0;
+
+var iteration = 0;
+var indexableData = Object.keys(data);
+function titlePosition()  { 
+      if (iteration === 0) {
+        iteration += 1;
+        return "portfolio_field_title_left";
+      } else {
+        var prevLength = 0;
+        for (var i = 0; i < iteration; i++) {
+          prevLength += data[indexableData[i]].length + iteration
+        }
+        if (prevLength % 2 === 0) {
+          iteration += 1;
+          return "portfolio_field_title_left";
+        } else {
+          iteration += 1;
+          return "portfolio_field_title_right";
+        }
+      }
+    }
 
 export default {
   name: "PortfolioPage",
@@ -139,12 +164,13 @@ export default {
   },
   data() {
     return {
-    data,
-    graphicLeft,
-    websiteLeft,
-    videoLeft,
-    conceptLeft
+      data,
+      titlePosition
     };
+  },
+  methods: {
+    
+    
   },
   props: {
     msg: String
