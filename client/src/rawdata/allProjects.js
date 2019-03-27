@@ -115,7 +115,7 @@ var data = {
         field: ["Openwire exhibition Poster"],
         role: ["Graphic Design", "Illustration"],
         date: "2014",
-        thumbnail: "http://i59.tinypic.com/2mmd443.jpg"
+        thumbnail: "images/projects/openwireposter.jpg"
       },
       {
         type:"graphic",
