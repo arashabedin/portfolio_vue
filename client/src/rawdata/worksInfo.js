@@ -126,7 +126,7 @@ var data = [
         name: "video1",
         data: [
 
-            { type: "video", src: "http://player.vimeo.com/video/79030504" },
+            { type: "video", src: "https://player.vimeo.com/video/79030504" },
 
 
 
@@ -136,7 +136,7 @@ var data = [
         name: "video2",
         data: [
 
-            { type: "video", src: "http://player.vimeo.com/video/90638807" },
+            { type: "video", src: "https://player.vimeo.com/video/90638807" },
 
 
 
@@ -146,7 +146,7 @@ var data = [
         name: "video3",
         data: [
 
-            { type: "video", src: "http://player.vimeo.com/video/105301168" },
+            { type: "video", src: "https://player.vimeo.com/video/105301168" },
 
         ]
     },
