@@ -7,7 +7,6 @@ const logger = require("morgan");
 const history = require('connect-history-api-fallback');
 
 
-app.set("port", process.env.PORT || 80);
 
 const staticFileMiddleware = express.static(path.join(__dirname, "./client/dist"));
 
@@ -23,8 +22,9 @@ app.get('/', function (req, res) {
 });
 
 app.use(express.static(path.join(__dirname, "./client/dist")));
+console.log(process.env.password)
 
-
+app.set("port", process.env.PORT || 80);
 
 app.listen(app.get("port"),()=>{
     console.log(`Server is running on port ${app.get("port")}`);
