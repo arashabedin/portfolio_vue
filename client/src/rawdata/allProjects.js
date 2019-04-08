@@ -253,7 +253,7 @@ var data = {
         type:"concept",
         name: "astronautescape",
         title: "Astronaut Escape",
-        field: ["Android Game Developmentn"],
+        field: ["Android Game Development"],
         role: ["Android Development", "Illustration"],
         date: "2017",
         thumbnail: "images/projects/astronautescape.jpg"
