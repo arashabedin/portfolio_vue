@@ -78,7 +78,7 @@ export default {
           break;
         case "payapay":
           window.open(
-            "http://www.payapay.io/en"
+            "https://payapay.io/en"
           );
           break;
         case "flip":
