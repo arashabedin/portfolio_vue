@@ -3,7 +3,7 @@
     <footer class="sixteen columns" style="margin-top:-10px;">
       <hr>
       <ul id="footerLinks">
-        <li>&copy; 2019 Arash Abedin</li>
+        <li>&copy; {{date}} Arash Abedin</li>
         <li>
           <a href="mailto:arash.abedin@gmail.com">arash.abedin@gmail.com</a>
         </li>
@@ -17,7 +17,16 @@
 </template>
 
 <script>
+let d = new Date();
+let date = d.getFullYear();
+
 export default {
+  data() {
+    return {
+      date:date
+    };
+  },
+
   name: "Footer",
   props: {}
 };
