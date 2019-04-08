@@ -3,26 +3,6 @@
   <div>
 
 
-    <div class="expander" v-if="type==='education'">
-      <input v-bind:id="identifier" class="expander-toggle" type="checkbox">
-      <label v-bind:for="identifier" class="expander-label">{{ title }}</label>
-      <div class="expander-content">
-        <div class="work-experience">
-          <div v-for="item in body" :key="item.id">
-            <hr>
-            <h3>{{item.type}}</h3>
-            <h3 style="float:right">{{item.date}}</h3>
-            <h4 v-if="item.school">{{item.school}}</h4>
-             <h4 v-if="item.level">{{item.level}}</h4>
-            <div v-for="x in item.name" :key="x.id">
-            </div>
-
-            <h5>Topics:</h5>
-            <h5 v-for="y in item.roles" :key="y.id">- {{y}}</h5>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
 
@@ -51,6 +31,26 @@
       </div>
     </div>
 
+    <div class="expander" v-if="type==='education'">
+      <input v-bind:id="identifier" class="expander-toggle" type="checkbox">
+      <label v-bind:for="identifier" class="expander-label">{{ title }}</label>
+      <div class="expander-content">
+        <div class="work-experience">
+          <div v-for="item in body" :key="item.id">
+            <hr>
+            <h3>{{item.type}}</h3>
+            <h3 style="float:right">{{item.date}}</h3>
+            <h4 v-if="item.school">{{item.school}}</h4>
+             <h4 v-if="item.level">{{item.level}}</h4>
+            <div v-for="x in item.name" :key="x.id">
+            </div>
+
+            <h5>Topics:</h5>
+            <h5 v-for="y in item.roles" :key="y.id">- {{y}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
       <div class="expander" v-if="type==='typicalSkills'">
@@ -65,7 +65,9 @@
              - {{x}}
             </p>
           </div>
+             
         </div>
+      
       </div>
     </div>
 
@@ -136,7 +138,7 @@ export default {
     font-size: 18px;
 }
 .expander .expander-toggle:checked + .expander-label + .expander-content {
-  max-height: 1200px;
+  max-height: 2000px;
 }
 .expander .expander-toggle:checked + .expander-label:after {
   content: "\2212";

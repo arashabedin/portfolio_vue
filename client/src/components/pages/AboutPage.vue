@@ -68,7 +68,7 @@
           <expander
             identifier="programmingSkills"
             type="typicalSkills"
-            title="Programming Skills"
+            title="Development Skills"
             v-bind:body="data.programmingSkills"
           ></expander>
                <expander
