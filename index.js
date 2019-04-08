@@ -17,11 +17,13 @@ app.use(history({
 }));
 app.use(staticFileMiddleware);
 
-app.get('/', function (req, res) {
+app.get('/*', function (req, res) {
   res.render(path.join(__dirname, "./client/dist"));
 });
 
 app.use(express.static(path.join(__dirname, "./client/dist")));
+
+
 console.log(process.env.password)
 
 app.set("port", process.env.PORT || 80);

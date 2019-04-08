@@ -3,7 +3,7 @@
     <footer class="sixteen columns" style="margin-top:-10px;">
       <hr>
       <ul id="footerLinks">
-        <li>&copy; 2016 Arash Abedin</li>
+        <li>&copy; 2019 Arash Abedin</li>
         <li>
           <a href="mailto:arash.abedin@gmail.com">arash.abedin@gmail.com</a>
         </li>

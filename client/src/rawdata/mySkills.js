@@ -22,9 +22,7 @@ var data = {
           "AfterEffects",
           "PremierePro",
           "Flash",
-          "UX",
-          "etc.",
-        ]
+          "UX",        ]
       },
       {
         title: "Corel",
@@ -33,13 +31,15 @@ var data = {
       {
         title: "Other",
         topics: [
-          "Visual Studio",
+          "Visual Studio / VS Code",
           "IntelliJ",
           "Android Studio",
           "Unity",
           "TVPaint",
           "3d Studio Max",
-          "Blender"
+          "Blender",
+          "Figma",
+          "Gimp"
         ]
       }
     ],
@@ -50,11 +50,12 @@ var data = {
         topics: [
           "HTML5",
           "CSS",
-          "JavaScript",
-          "ES6",
+          "JavaScript(ES6)",
+          "TypeScript",
           "C#",
           "Java",
           "Python",
+          "C/C++",
           "R",
           "SQL",
           "PHP"
@@ -64,9 +65,12 @@ var data = {
         title: "Frameworks and Libraries",
         topics: [
           "React.js",
-          "Vue.js",
+          "Vue.js / Vuex",
           "Angular 2/4",
+          "Redux / React-Redux / Redux-Thunk / Redux-Saga",
+          "Node.js",
           "Express.js",
+          "Socker.io",
           ".net core 2",
           "asp.net mvc 5",
           "OpenCV",
@@ -76,7 +80,7 @@ var data = {
       },
       {
         title: "Database",
-        topics: ["SQL data base", "MongoDB"]
+        topics: ["mySQL", "MongoDB"]
       },
       {
         title: "CMS",
@@ -84,11 +88,19 @@ var data = {
       },
       {
         title: "Dev ops & other",
-        topics: ["Docker", "Heroku","Git","Linux Command-line"]
+        topics: ["Docker", "Heroku","ZeroMQ","Git","Linux CLI"]
       }
     ],
     
     works : [
+    
+        {
+          type: "Founder and Lead Developer",
+          date: "2018 - Now",
+          company: "PAYAPAY",
+          name: [{ type: "url", url: "http://www.payapay.io/en", name: "payapay.io" }],
+          roles: ["Concept developer","Fullstack developer","UX/UI designer","Graphic designer"]
+        },
       {
         type: "Front End Developer",
         date: "2015 - 2016",
@@ -109,7 +121,7 @@ var data = {
         ]
       },
       {
-        type: "Designer",
+        type: "Graphic Designer",
         date: "2014",
         company: "Openwire Exhibition",
         name: [
@@ -136,7 +148,7 @@ var data = {
         ]
       },
       {
-        type: "freelance",
+        type: "Freelance",
         date: "2011 - Present",
         name: [
           { type: "url", url: "http://www.bmobilized.com", name: "bmobilized.com" },
@@ -149,7 +161,58 @@ var data = {
         ]
       }
     ],
-    
+    education: [
+      {
+        type: 'Computer Science and Informatics',
+        level:"Master's degree",
+        date: '2017 - 2019',
+        school: 'Roskilde University',
+        roles: [
+          'Full Stack development using ASP.NET Core with C#, Node.js , RESTfull API and JS frameworks',
+          'Systems Architecture design and development',
+          'Real time multiplayer game development with Unity',
+          'Big Data Analysis',
+          'Mobile Development',
+          'Theoretical Computer Science'
+        ]
+      },
+      {
+        type: 'Computer Science',
+        level:"Bachelor's Supplementary Semester",
+        date: '2017',
+        school: 'Roskilde University',
+        roles: [
+         'Algorithms & Data Structures',
+          'Advanced Programming in JAVA',
+          'Interactive Digital Systems',
+          'Subject Module Project in Computer Science'
+        ]
+      },
+      {
+        type: 'Digital Concept Development',
+        level:"Professional Bachelor degree",
+        date: '2013 - 2015',
+        school: 'Zealand Institute of Business and Technology',
+        roles: [
+          'Algorithms & Data Structures',
+          'Advanced Programming in JAVA',
+          'Interactive Digital Systems',
+          'Subject Module Project in Computer Science'
+        ]
+      },
+      {
+        type: 'Multimedia Design and Communication',
+        level:"Academic Profession",
+        date: '2008 - 2010',
+        school: 'Kea Copenhagen School of Design and Technology',
+        roles: [
+          'Web Development',
+          'Digital Design',
+          'Digital Communication',
+          'Video Editing',
+        ]
+      }
+    ],
     languageSkills : [
       "English (Fluent)",
       "Danish (Fluent)",

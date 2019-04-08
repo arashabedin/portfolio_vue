@@ -30,9 +30,13 @@
                 <strong>Blog:</strong>
                 <a href="http://arashabedin.blogspot.com" target="_blank"> arashabedin.blogspot.com</a>
               </li>
-              <li>
+              <!-- <li>
                 <strong>Résumé:</strong>
                 <a href="CV.pdf" target="_blank"> CV.pdf</a>
+              </li> -->
+                <li>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/arashabedin" target="_blank"> https://github.com/arashabedin</a>
               </li>
             </ul>
           </div>
@@ -45,7 +49,10 @@
         <h2>Resumé</h2>
         <p>click on the title to expand the description</p>
         <div id="faqq">
+          
           <expander identifier="work" type="work" title="Work Experience" v-bind:body="data.works"></expander>
+          <expander identifier="education" type="education" title="Education" v-bind:body="data.education"></expander>
+
           <expander
             identifier="theoriticalSkills"
             type="otherSkills"
