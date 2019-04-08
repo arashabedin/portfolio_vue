@@ -12,10 +12,10 @@
         <span class="project_field_span" v-for="item in field" :key="item.id">- {{item}}</span>
       </div>
       <VueLoadImage>
-        <img slot="image" v-bind:src="thumbnail" alt="Project 01" class="thumbnailImage">
+        <img slot="image" v-bind:src="thumbnail" class="thumbnailImage">
         <img
           slot="preloader"
-          src="https://ya-webdesign.com/images/minimalist-transparent-loading-gif-4.gif"
+          src="@../../assets/loader.gif"
         >
       </VueLoadImage>
     </div>
@@ -107,9 +107,9 @@ export default {
     }
   },
   props: ["name", "title", "field", "role", "date", "thumbnail"],
-  components: {
-    "vue-load-image": VueLoadImage
-  }
+  // components: {
+  //   "vue-load-image": VueLoadImage
+  // }
 };
 </script>
 
