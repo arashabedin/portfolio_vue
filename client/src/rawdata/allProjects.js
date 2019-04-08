@@ -241,20 +241,20 @@ var data = {
       //   thumbnail: "images/projects/soundbib.jpg"
       // },
       {
-        type:"Performance Design, Robotics",
+        type:"concept" ,
         name: "drawingrobots",
         title: "Drawing Robots",
         field: ["Performance Design"],
-        role: ["Performance Design, Robotics"],
+        role: ["Performance Design", "Robotics"],
         date: "2017",
         thumbnail: "images/projects/drawingrobots.jpg"
       },
       {
-        type:"Android Game Development",
+        type:"concept",
         name: "astronautescape",
         title: "Astronaut Escape",
         field: ["Android Game Developmentn"],
-        role: ["Android Development, Illustration"],
+        role: ["Android Development", "Illustration"],
         date: "2017",
         thumbnail: "images/projects/astronautescape.jpg"
       },
