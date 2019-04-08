@@ -11,13 +11,13 @@
         <h4>{{title}}</h4>
         <span class="project_field_span" v-for="item in field" :key="item.id">- {{item}}</span>
       </div>
-      <VueLoadImage>
-        <img slot="image" v-bind:src="thumbnail" class="thumbnailImage">
-        <img
+      <!-- <VueLoadImage> -->
+        <img v-bind:src="thumbnail" class="thumbnailImage">
+        <!-- <img
           slot="preloader"
           src="loader.gif"
         >
-      </VueLoadImage>
+      </VueLoadImage> -->
     </div>
 
     <div class="projectInfo">
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import VueLoadImage from "vue-load-image";
+// import VueLoadImage from "vue-load-image";
 
 export default {
   name: "EachProject",
@@ -107,9 +107,9 @@ export default {
     }
   },
   props: ["name", "title", "field", "role", "date", "thumbnail"],
-  components: {
-    "vue-load-image": VueLoadImage
-  }
+  // components: {
+  //   "vue-load-image": VueLoadImage
+  // }
 };
 </script>
 

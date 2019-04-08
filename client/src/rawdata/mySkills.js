@@ -48,8 +48,7 @@ var data = {
       {
         title: "Languages",
         topics: [
-          "HTML5",
-          "CSS",
+          "HTML5 / CSS / SaSS",
           "JavaScript(ES6)",
           "TypeScript",
           "C#",
@@ -64,19 +63,20 @@ var data = {
       {
         title: "Frameworks and Libraries",
         topics: [
-          "React.js",
+          "React.js / Context Api",
           "Vue.js / Vuex",
           "Angular 2/4",
           "Knockout",
           "Redux / React-Redux / Redux-Thunk / Redux-Saga",
-          "Node.js",
-          "Express.js",
-          "Socker.io",
-          ".net core 2",
-          "asp.net mvc 5",
+          "Webpack",
+          "GraphQL / Apollo-Server / GraphQL Yoga",
+          "Node.js / Express.js / Socker.io",
+          ".net core 2 / asp.net mvc 5 / asp.net Razor View",
+          "ZeroMQ",
+          "JavaFX / Swing",
           "OpenCV",
           "Processing",
-          "jQuery"
+          "jQuery",
         ]
       },
       {
@@ -88,8 +88,8 @@ var data = {
         topics: ["Wordpress"]
       },
       {
-        title: "DevOps & other",
-        topics: ["Docker", "Heroku","ZeroMQ","Git","Linux CLI"]
+        title: "DevOps & Other",
+        topics: ["Docker", "Heroku / Netlify / Digital Ocean","Git","npm","Unix CLI"]
       }
     ],
     
