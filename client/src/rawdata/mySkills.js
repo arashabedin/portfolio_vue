@@ -67,6 +67,7 @@ var data = {
           "React.js",
           "Vue.js / Vuex",
           "Angular 2/4",
+          "Knockout",
           "Redux / React-Redux / Redux-Thunk / Redux-Saga",
           "Node.js",
           "Express.js",
