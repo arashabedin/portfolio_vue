@@ -150,5 +150,23 @@ var data = [
 
         ]
     },
+    {
+        name: "drawingrobots",
+        data: [
+
+            { type: "image", src: "/projects/drawingrobots/images/project_01_large_a.jpg", size: "xmedium" },
+            { type: "image", src: "/projects/drawingrobots/images/project_01_large_b.jpg", size: "xmedium" },
+            { type: "image", src: "/projects/drawingrobots/images/project_01_large_c.jpg", size: "xmedium" },
+            { type: "image", src: "/projects/drawingrobots/images/project_01_large_d.JPG", size: "xmedium" },
+            { type: "image", src: "/projects/drawingrobots/images/project_01_large_e.jpg", size: "xmedium" },
+            { type: "image", src: "/projects/drawingrobots/images/project_01_large_f.jpg", size: "xmedium" },
+            { type: "image", src: "/projects/drawingrobots/images/project_01_large_g.jpg", size: "xmedium" },
+            { type: "image", src: "/projects/drawingrobots/images/project_01_large_h.jpg", size: "xmedium" },
+            { type: "image", src: "/projects/drawingrobots/images/project_01_large_i.jpg", size: "xmedium" },
+
+
+
+        ]
+    },
 ];
 export default data;

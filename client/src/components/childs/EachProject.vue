@@ -33,7 +33,7 @@
       <ul>
         <li>
           <strong>Role:</strong>
-          <span v-for="item in role" :key="item.id">{{item}}</span>
+          <span class="eachtag" v-for="item in role" :key="item.id"> {{item}} </span>
         </li>
         <li>
           <strong>Year:</strong>
@@ -71,6 +71,16 @@ export default {
         case "qator":
           window.open("http://www.qator.com");
           break;
+        case "astronautescape":
+          window.open(
+            "https://play.google.com/store/apps/details?id=com.arash.astronautescape"
+          );
+          break;
+        case "payapay":
+          window.open(
+            "http://www.payapay.io"
+          );
+          break;
         case "flip":
           window.open("/projects/flipskate/flip.html");
           break;
@@ -83,7 +93,7 @@ export default {
         case "hse":
           window.open("/projects/hse/index.html");
           break;
-           case "cmc":
+        case "cmc":
           window.open("/projects/cominghomecafe/cominghomecafe.html");
           break;
         default:
@@ -96,3 +106,11 @@ export default {
 </script>
 
 
+<style>
+.eachtag{
+    background-color: black;
+    color: white;
+    padding: 1px;
+    margin: 4px;
+    }
+</style>

@@ -87,7 +87,7 @@ var data = {
         topics: ["Wordpress"]
       },
       {
-        title: "Dev ops & other",
+        title: "DevOps & other",
         topics: ["Docker", "Heroku","ZeroMQ","Git","Linux CLI"]
       }
     ],

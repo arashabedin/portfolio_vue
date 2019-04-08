@@ -149,6 +149,15 @@ var data = {
     websites: [
       {
         type:"website",
+        name: "payapay",
+        title: "payapay",
+        field: ["Fullstack Development"],
+        role: ["Concept Development", "Fullstack Development", "UI/UX design"],
+        date: "2018",
+        thumbnail: "images/projects/payapay.jpg"
+      },
+      {
+        type:"website",
         name: "qator",
         title: "QAtor A/S",
         field: ["Website"],
@@ -231,6 +240,24 @@ var data = {
       //   date: "2013",
       //   thumbnail: "images/projects/soundbib.jpg"
       // },
+      {
+        type:"Performance Design, Robotics",
+        name: "drawingrobots",
+        title: "Drawing Robots",
+        field: ["Performance Design"],
+        role: ["Performance Design, Robotics"],
+        date: "2017",
+        thumbnail: "images/projects/drawingrobots.jpg"
+      },
+      {
+        type:"Android Game Development",
+        name: "astronautescape",
+        title: "Astronaut Escape",
+        field: ["Android Game Developmentn"],
+        role: ["Android Development, Illustration"],
+        date: "2017",
+        thumbnail: "images/projects/astronautescape.jpg"
+      },
       {
         type:"concept",
         name: "game",
