@@ -107,9 +107,9 @@ export default {
     }
   },
   props: ["name", "title", "field", "role", "date", "thumbnail"],
-  // components: {
-  //   "vue-load-image": VueLoadImage
-  // }
+  components: {
+    "vue-load-image": VueLoadImage
+  }
 };
 </script>
 
