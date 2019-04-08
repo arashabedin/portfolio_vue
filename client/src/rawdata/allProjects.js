@@ -245,7 +245,7 @@ var data = {
         name: "drawingrobots",
         title: "Drawing Robots",
         field: ["Performance Design"],
-        role: ["Performance Design", "Robotics"],
+        role: ["Performance Design", "Robotics","Arduino"],
         date: "2017",
         thumbnail: "images/projects/drawingrobots.jpg"
       },
