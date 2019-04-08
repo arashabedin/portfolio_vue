@@ -11,11 +11,11 @@
         <h4>{{title}}</h4>
         <span class="project_field_span" v-for="item in field" :key="item.id">- {{item}}</span>
       </div>
-<vue-load-image>
+<VueLoadImage>
       <img slot="image" v-bind:src="thumbnail" alt="Project 01" class="thumbnailImage">
             <img slot="preloader" src="https://ya-webdesign.com/images/minimalist-transparent-loading-gif-4.gif"/>
 
-      </vue-load-image>
+      </VueLoadImage>
     </div>
 
     <div class="projectInfo">
