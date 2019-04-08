@@ -153,7 +153,8 @@ var data = [
     {
         name: "drawingrobots",
         data: [
-
+            { type: "text", text: "This is Performance art project, which has been accomplished by collaboration with an art student from Jutland Art Academy. The aim of this project was to create robots that are able to draw on a table and have a sufficient level of artificial intelligence to avoid falling from the edge. We utilized Arduino boards as the micro-controllers  electronic platform and the programming language C/C++ for the robots' logic. This logic, dedicated to the decision making and the survivability of the robots, is implemented in the form of a finite state machine. In order to create the possibility to modularize the hardware and software aspects of the robots, an input  output library is built. Our robots have done performance in Jutland Art Academy's exhibition and focus-europa in Germany.",
+              size: "xmedium" },
             { type: "image", src: "/projects/drawingrobots/images/project_01_large_a.jpg", size: "xmedium" },
             { type: "image", src: "/projects/drawingrobots/images/project_01_large_b.jpg", size: "xmedium" },
             { type: "image", src: "/projects/drawingrobots/images/project_01_large_c.jpg", size: "xmedium" },

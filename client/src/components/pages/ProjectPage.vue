@@ -10,6 +10,10 @@
           alt="Project 01"
         >
       </span>
+      <p v-if="item.type==='text'" v-bind:class="{centered:true, medium:item.size==='medium' , xmedium:item.size==='xmedium'}"
+>
+{{item.text}}       
+      </p>
       <span v-if="item.type==='video'">
           <iframe 
           v-bind:class="{centered:true, video:true}"
@@ -55,6 +59,7 @@ export default {
   margin: auto;
   display: block;
   width: 100%;
+  font-size: 18px;
 }
 .true{
     width:800px;
