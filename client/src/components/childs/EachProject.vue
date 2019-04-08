@@ -15,7 +15,7 @@
         <img slot="image" v-bind:src="thumbnail" class="thumbnailImage">
         <img
           slot="preloader"
-          src="../../../public.loader.gif"
+          src="loader.gif"
         >
       </VueLoadImage>
     </div>
