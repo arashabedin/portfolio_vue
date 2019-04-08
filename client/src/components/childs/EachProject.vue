@@ -11,10 +11,12 @@
         <h4>{{title}}</h4>
         <span class="project_field_span" v-for="item in field" :key="item.id">- {{item}}</span>
       </div>
-<VueLoadImage>
-      <img slot="image" v-bind:src="thumbnail" alt="Project 01" class="thumbnailImage">
-            <img slot="preloader" src="https://ya-webdesign.com/images/minimalist-transparent-loading-gif-4.gif"/>
-
+      <VueLoadImage>
+        <img slot="image" v-bind:src="thumbnail" alt="Project 01" class="thumbnailImage">
+        <img
+          slot="preloader"
+          src="https://ya-webdesign.com/images/minimalist-transparent-loading-gif-4.gif"
+        >
       </VueLoadImage>
     </div>
 
@@ -36,7 +38,7 @@
       <ul>
         <li>
           <strong>Role:</strong>
-          <span class="eachtag" v-for="item in role" :key="item.id"> {{item}} </span>
+          <span class="eachtag" v-for="item in role" :key="item.id">{{item}}</span>
         </li>
         <li>
           <strong>Year:</strong>
@@ -48,7 +50,7 @@
 </template>
 
 <script>
-import VueLoadImage from 'vue-load-image'
+import VueLoadImage from "vue-load-image";
 
 export default {
   name: "EachProject",
@@ -82,9 +84,7 @@ export default {
           );
           break;
         case "payapay":
-          window.open(
-            "https://payapay.io/en"
-          );
+          window.open("https://payapay.io/en");
           break;
         case "flip":
           window.open("/projects/flipskate/flip.html");
@@ -106,16 +106,19 @@ export default {
       }
     }
   },
-  props: ["name", "title", "field", "role", "date", "thumbnail"]
+  props: ["name", "title", "field", "role", "date", "thumbnail"],
+  components: {
+    "vue-load-image": VueLoadImage
+  }
 };
 </script>
 
 
 <style>
-.eachtag{
-    background-color: black;
-    color: white;
-    padding: 1px;
-    margin: 4px;
-    }
+.eachtag {
+  background-color: black;
+  color: white;
+  padding: 1px;
+  margin: 4px;
+}
 </style>
