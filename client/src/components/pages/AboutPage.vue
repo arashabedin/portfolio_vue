@@ -18,7 +18,7 @@
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>
-            <img src="images/about.jpg" alt="arash abedin" width="439" height="271">
+            <img src="images/about.jpg" alt="arash abedin">
           </p>
           <div class="lined-list">
             <ul>

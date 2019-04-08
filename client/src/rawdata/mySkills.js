@@ -54,7 +54,7 @@ var data = {
           "C#",
           "Java",
           "Python",
-          "C/C++",
+          "C / C++",
           "R",
           "SQL",
           "PHP"

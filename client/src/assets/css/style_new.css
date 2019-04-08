@@ -5,13 +5,13 @@
   }
 
 .left_side{
-    width: 48%;
+    width: 60%;
     display: inline-block;
-    margin-right: 28px;
+    margin-right: 80px;
     vertical-align: top;
 }
 .right_side{
-    width: 49%;
+    width: 28%;
     display: inline-block;
 }
 
