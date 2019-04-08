@@ -7,7 +7,7 @@
         <img
           v-bind:class="{centered:true, medium:item.size==='medium' , xmedium:item.size==='xmedium'}"
           v-bind:src="item.src"
-          alt="Project 01"
+         
         >
       </span>
       <p v-if="item.type==='text'" v-bind:class="{centered:true, medium:item.size==='medium' , xmedium:item.size==='xmedium'}"
