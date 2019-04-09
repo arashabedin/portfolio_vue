@@ -7,6 +7,8 @@ var data = {
       "Graphic Design",
       "UX/UI design",
       "Illustration",
+      "Image Processing",
+      "Business Intelligence",
       "Service Design",
       "Motion graphic",
       "Search Engine Optimization",
@@ -53,8 +55,8 @@ var data = {
           "TypeScript",
           "C#",
           "Java",
-          "Python",
           "C / C++",
+          "Python",
           "R",
           "SQL",
           "PHP"
@@ -89,7 +91,7 @@ var data = {
       },
       {
         title: "DevOps & Other",
-        topics: ["Docker", "Heroku / Netlify / Digital Ocean","Git","npm","Unix CLI"]
+        topics: ["Docker", "Heroku / Netlify / Digital Ocean / Amazon EC2","Git","npm","Unix CLI"]
       }
     ],
     
