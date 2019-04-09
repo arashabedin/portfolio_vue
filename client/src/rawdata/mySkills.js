@@ -63,7 +63,7 @@ var data = {
       {
         title: "Frameworks and Libraries",
         topics: [
-          "React.js / Context Api",
+          "React.js",
           "Vue.js / Vuex",
           "Angular 2/4",
           "Knockout",
