@@ -59,17 +59,17 @@
             title="Technical and academic knowledge"
             v-bind:body="data.theoriticalSkills"
           ></expander>
+           <expander
+            identifier="programmingSkills"
+            type="typicalSkills"
+            title="Development Skills"
+            v-bind:body="data.programmingSkills"
+          ></expander>
           <expander
             identifier="softwareSkills"
             type="typicalSkills"
             title="Software Skills"
             v-bind:body="data.softwareSkills"
-          ></expander>
-          <expander
-            identifier="programmingSkills"
-            type="typicalSkills"
-            title="Development Skills"
-            v-bind:body="data.programmingSkills"
           ></expander>
                <expander
             identifier="languageSkills"
