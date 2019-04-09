@@ -151,7 +151,7 @@ var data = {
         type:"website",
         name: "payapay",
         title: "payapay",
-        description:"I've founded this website (which is still in development process), in order to facilitate the problem of Iranian abroad students receiving money from their family (while Iranian banks are under sanctions), and as I've struggled the same issue in the past and came up with a solution for it. You can read more about the concept in the website's link.",
+        description:"I've founded this website (which is still in development process), in order to facilitate the problem of Iranian abroad students receiving money from their family (while Iranian banks are under sanctions), and as I've struggled the same issue in the past, I came up with a solution as a web applciation. You can read more about the concept in the website's link.",
         field: ["Fullstack Development"],
         role: ["Concept Development", "Fullstack Development", "UI/UX design"],
         date: "2018",
