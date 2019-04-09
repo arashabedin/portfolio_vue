@@ -7,7 +7,7 @@
       <ul>
         <li id="illustration">Illustration</li>
         <li id="graphics">Graphic design</li>
-        <li id="website">Web Design</li>
+        <li id="website">Websites</li>
         <li id="videos">Videos</li>
         <li id="concepts">Concepts</li>
       </ul>
