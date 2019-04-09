@@ -113,7 +113,7 @@ var data = {
         type: "Art Director",
         date: "2014",
         company: "Valo TV",
-        name: [{ type: "url", url: "https://vimeo.com/valotv", name: "www.valo.tv" }],
+        name: [{ type: "url", url: "https://vimeo.com/valotv", name: "Visit ValoTV" }],
         roles: [
           "AD duties unifying Nordic culture materials for visual promotion products.",
           "Development of illustration to website and interactive presentations.",
@@ -126,7 +126,7 @@ var data = {
         date: "2014",
         company: "Openwire Exhibition",
         name: [
-          { type: "url", url: "http://kopenhagen.dk/news/nyhed/article/open-wire-digital-sculptures-in-the-harbour-of-koege/", name: "www.openwire.dk" }
+          { type: "url", url: "http://kopenhagen.dk/news/nyhed/article/open-wire-digital-sculptures-in-the-harbour-of-koege/", name: "Read more about OpenWire" }
         ],
         roles: [
           "Concept development of mobile application.",
@@ -141,7 +141,7 @@ var data = {
           {
             type: "url",
             url: "https://bakkegaard.skoleporten.dk/sp",
-            name: "bakkegaard.skoleporten.dk/sp"
+            name: "Visit their website"
           }
         ],
         roles: [
