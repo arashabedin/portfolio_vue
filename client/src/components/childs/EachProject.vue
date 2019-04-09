@@ -23,6 +23,8 @@
     <div class="projectInfo">
       <h4>{{title}}</h4>
       <div class="projectNavCounter"></div>
+           <p class="description" v-if="description">{{description}}</p>
+
       <div class="projectNav">
         <div class="projectNavEnlarge">
           <button class="enlargeButton" v-on:click="goToProject">View The Project</button>
@@ -106,7 +108,7 @@ export default {
       }
     }
   },
-  props: ["name", "title", "field", "role", "date", "thumbnail"],
+  props: ["name", "title", "description","field", "role", "date", "thumbnail"],
   // components: {
   //   "vue-load-image": VueLoadImage
   // }
@@ -120,5 +122,8 @@ export default {
   color: white;
   padding: 1px;
   margin: 4px;
+}
+.description{
+  clear: both;
 }
 </style>
