@@ -141,7 +141,7 @@ var data = {
           {
             type: "url",
             url: "https://bakkegaard.skoleporten.dk/sp",
-            name: "Visit their website"
+            name: "Visit school's website"
           }
         ],
         roles: [
@@ -152,8 +152,8 @@ var data = {
         type: "Freelance",
         date: "2011 - Present",
         name: [
-          { type: "url", url: "http://www.bmobilized.com", name: "bmobilized.com" },
-          { type: "url", url: "http://www.switcherr.com", name: "switcherr.com" }
+          { type: "url", url: "http://www.switcherr.com", name: "switcherr.com" },
+          { type: "url", url: "http://www.bmobilized.com", name: "bmobilized.com" }
         ],
         roles: [
           "Concept development",
