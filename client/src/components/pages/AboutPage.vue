@@ -56,7 +56,7 @@
           <expander
             identifier="theoriticalSkills"
             type="otherSkills"
-            title="Technical and academic knowledge"
+            title="Technical and Academic knowledge"
             v-bind:body="data.theoriticalSkills"
           ></expander>
            <expander
