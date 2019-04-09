@@ -99,7 +99,7 @@ var data = {
           type: "Founder and Lead Developer",
           date: "2018 - Now",
           company: "PAYAPAY",
-          name: [{ type: "url", url: "http://www.payapay.io/en", name: "payapay.io" }],
+          name: [{ type: "url", url: "https://www.payapay.io/en", name: "payapay.io" }],
           roles: ["Concept developer","Fullstack developer","UX/UI designer","Graphic designer"]
         },
       {
