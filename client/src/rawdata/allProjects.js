@@ -248,7 +248,7 @@ var data = {
         type:"concept" ,
         name: "drawingrobots",
         title: "Drawing Robots",
-        description:"This project was done in collaboration of 3 other people: Tue Brisson Mosich, Hjalte Schurmann Illeborg and Rasmus Kudsk Nygreen. You can read more detail on the project, on the project's page.",
+        description:"This project was done in collaboration with 3 other people: Tue Brisson Mosich, Hjalte Schurmann Illeborg and Rasmus Kudsk Nygreen. You can read more detail on the project, on the project's page.",
         field: ["Performance Design"],
         role: ["Performance Design", "Robotics","Arduino"],
         date: "2017",
