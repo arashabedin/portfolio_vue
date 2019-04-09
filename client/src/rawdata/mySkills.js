@@ -169,12 +169,14 @@ var data = {
         date: '2017 - 2019',
         school: 'Roskilde University',
         roles: [
-          'Full Stack development using ASP.NET Core with C#, Node.js , RESTfull API and JS frameworks',
-          'Systems Architecture design and development',
-          'Real time multiplayer game development with Unity',
+          'Full Stack Development using ASP.NET Core with C#, Node.js , RESTfull API and JS frameworks',
+          'Systems Architecture Design and Development',
+          'Real Time multiplayer Game Development with Unity',
           'Big Data Analysis',
           'Mobile Development',
-          'Theoretical Computer Science'
+          'Theoretical Computer Science',
+          'Digital Image Processing'
+
         ]
       },
       {
@@ -186,7 +188,7 @@ var data = {
          'Algorithms & Data Structures',
           'Advanced Programming in JAVA',
           'Interactive Digital Systems',
-          'Subject Module Project in Computer Science'
+          'Micro Controllers and Robotics'
         ]
       },
       {
@@ -195,10 +197,10 @@ var data = {
         date: '2013 - 2015',
         school: 'Zealand Institute of Business and Technology',
         roles: [
-          'Algorithms & Data Structures',
-          'Advanced Programming in JAVA',
-          'Interactive Digital Systems',
-          'Subject Module Project in Computer Science'
+          'Digital Design / Interaction Design',
+          'User Research / User Experience Design',
+          'Project Management',
+          'E-business',
         ]
       },
       {
