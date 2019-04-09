@@ -4,9 +4,7 @@ var data = {
       "Front-end development",
       "Back-end development",
       "Android Development",
-      "Graphic Design",
-      "UX/UI design",
-      "Illustration",
+      "Graphic Design / UX/UI design / Illustration",
       "Image Processing",
       "Business Intelligence",
       "Service Design",
@@ -24,7 +22,7 @@ var data = {
           "AfterEffects",
           "PremierePro",
           "Flash",
-          "UX",        ]
+          "UX", ]
       },
       {
         title: "Corel",
