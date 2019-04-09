@@ -70,7 +70,7 @@ var data = {
           "Redux / React-Redux / Redux-Thunk / Redux-Saga",
           "Webpack",
           "GraphQL / Apollo-Server / GraphQL Yoga",
-          "Node.js / Express.js / Socker.io",
+          "Node.js / Express.js / Socket.io",
           ".net core 2 / asp.net mvc 5 / asp.net Razor View",
           "ZeroMQ",
           "JavaFX / Swing",
